@@ -1,0 +1,219 @@
+.light-mode{
+    h1{
+        color: black;
+    }
+    h2{
+        color: black;
+    }
+    h3{
+        color: black;
+    }
+    p{
+        color: black;
+    }
+    .background{
+        background: rgb(255, 255, 255);
+    }
+    .primary-button{
+        h3{
+            color: white;
+        }
+    }
+    .secondary-button{
+    &:hover{
+        background: darken(white, 90%);
+        transition: 0.5s;
+        transform: translatey(3px);
+    }
+    }
+    .project-button{
+        box-shadow: none;
+        transition: 0.5s;
+        p{
+            color: #3C64F7;
+        }
+        svg{
+            fill: #3C64F7;
+        }
+        &:hover{
+            background: lighten(#5A3FFF, 5%);
+            transition: 0.5s;
+            transform: translatey(3px);
+            p{
+                color: white;
+            }
+            svg{
+                fill: white;
+            }
+        }
+    }
+    .resume-button{
+        background: rgba(166, 157, 157, 0.066);
+        transition: 0.5s;
+        svg{
+            fill: black;
+            transition: 0.5s;
+        }
+        &:hover{
+            p{
+                transition: 0.5s;
+                color: white;
+            }
+            background: lighten(#5A3FFF, 5%);
+            transform: translatey(3px);
+            svg{
+                fill: white;
+                transform: rotate(90deg);
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+    .text-button{
+        a{            
+            color: black;
+            svg{
+                fill: black;
+            }
+            &:hover{
+                color: #5A3FFF;
+                svg{
+                    fill: #5A3FFF;
+                }
+            }
+        }
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+        .menu-btn{
+            background: rgba(166, 157, 157, 0.1);
+            .menu-btn-svg{
+                transition: 0.5s;
+                fill: black;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .dropdown-content {
+        position: absolute;
+        background:#121111;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    } 
+    svg{
+        .whitebit{
+            fill: black!important;
+            transition: fill .4s ease;  
+        }
+        .bluebit{
+            fill: #5A3FFF;
+            transition: fill .4s ease;  
+        }
+        &:hover{
+            .whitebit{
+                fill: #5A3FFF;
+                transition: fill .4s ease;  
+            }
+            .bluebit{
+                fill: #5A3FFF!important;
+                transition: fill .4s ease;  
+            }
+        }
+    }
+   .header-links{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        height: 40px;
+        padding:  0.78vw 1vw;
+        &:hover{
+            background: lighten(#5A3FFF,5%);
+        }
+    }
+    .hero-banner{
+        // background: #F6F1ED;
+        .intro-pill{
+            .location{
+                background: rgba(166, 157, 157, 0.1);
+            }
+            #linkedin-btn{
+                fill: black!important;
+            }
+        }
+    }
+    // .projects-section{
+    // }
+    // .experience-section{
+    // }
+    // .methodology-section{
+    // }
+    // .footer{
+    // }
+    // .skill-card{
+    //     background: ;
+    // }
+    .project-card{
+        border: 1px solid #CBD6FF;
+        background: #EEF2FF;
+        box-shadow: none;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.10), 0px 4px 4px 0px rgba(0, 0, 0, 0.09), 0px 8px 5px 0px rgba(0, 0, 0, 0.05), 0px 14px 6px 0px rgba(0, 0, 0, 0.01), 0px 22px 6px 0px rgba(0, 0, 0, 0.00);
+        p{
+            color: #656565;
+        }
+        .project-button{
+            p{
+                color: #3C64F7;
+            }
+            &:hover{
+                p{
+                    color: white;
+                }
+            }
+        }
+    }
+    .skill-card{
+        border-radius: 8px;
+        border: 1px solid #D1DBFF;
+        background: #EEF2FF;
+        backdrop-filter: blur(10px);
+        h3{
+            color: black;
+            font-weight: 600;
+        }
+        svg{
+            fill: black;
+        }
+    }
+    .process-card{
+        border: 1px solid #D1DBFF;
+        background: #EEF2FF;
+        h3{
+            color: #313131;
+        }
+        p{
+            color: #656565;
+        }
+    }
+    .section-intro{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p{
+            color: black!important;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            svg{
+                fill: black!important;
+            }
+        }
+    }
+}

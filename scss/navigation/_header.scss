@@ -1,0 +1,99 @@
+header{
+    margin-top: 3vw;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .links-container{
+        width: auto;
+        display: inline-flex;
+        padding: 0.4vw 1.8vw 0.4vw 1.8vw;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6vw;
+        border-radius: 0.6vw;
+        border: 0.07vw solid #2A2240;
+        background: rgba(166, 157, 157, 0.10);
+        backdrop-filter: blur(0.7vw);
+        transition: 0.5s;
+        .toggle-switch{
+            margin-left: 2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 0.5vw;
+        }
+        .header-link{
+            display: flex;
+            height: fit-content;
+            width: 6vw;
+            padding: 0.6vw 0.6vw 0.6vw 0.9vw;
+            justify-content: center;
+            align-items: center;
+            gap: 0.6vw;
+            text-decoration: none;
+            position: relative;
+            svg{
+                position: absolute;
+                height: 1.5vw!important;
+                opacity: 0;
+                top: 0.65vw;
+                left: 0.3vw;
+                transition: transform 0.5s, opacity 0.5s;
+            }
+            p{
+                font-size: 0.8vw!important;
+                transition: transform 0.5s;
+            }
+            &:hover{
+                transition: 0.5s;
+                background-color: rgba(72, 16, 151, 0.336);
+                border-radius: 0.6vw;
+                p{
+                    transition: 0.5s;
+                    transform: translateX(0.5vw);
+                }
+                svg{
+                    transition: 0.5s;
+                    transform: scale(1.3);
+                    opacity: 1;
+                }
+            }
+            &:not(:hover) { /* Added :not(:hover) pseudo-class */
+                transition: 0.5s;
+              }
+              &:not(:hover) p {
+                transform: translateX(0); /* Reset the translation */
+              }
+              &:not(:hover) svg {
+                transform: scale(1);
+                opacity: 0;
+              }
+        }
+        svg{
+            height: 1vw!important;
+            .whitebit{
+                fill: white;
+                transition: fill .4s ease;  
+            }
+            .bluebit{
+                fill: $primaryColor;
+                transition: fill .4s ease;  
+            }
+            &:hover{
+                .whitebit{
+                    fill: $primaryColor;
+                    transition: fill .4s ease;  
+                }
+                .bluebit{
+                    fill: $white;
+                    transition: fill .4s ease;  
+                }
+            }
+        }
+    }
+    
+}

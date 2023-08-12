@@ -1,0 +1,21 @@
+// BASE
+@import './base/lightmode';
+@import './base/reset';
+@import './base/typography';
+@import './base/colors';
+
+// COMPONENTS
+@import './components/buttons';
+@import './components/cards';
+
+// NAVIGATION
+@import './navigation/footer';
+@import './navigation/header';
+
+// PAGES
+@import './pages/home';
+@import './pages/about';
+ 
+
+// DUPLICATE PROPERTIES FUNCTION
+// ex: @extend .btn

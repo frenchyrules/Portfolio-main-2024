@@ -1,0 +1,211 @@
+.primary-button{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 1.5vw;
+
+    width: fit-content;
+    height: fit-content;
+
+    color: $white;
+    text-decoration: none;
+
+    background: $primaryColor;
+    box-shadow: 0vw 0vw 2.7vw rgba(90, 63, 255, 0.41);
+    border-radius: 0.3vw;
+    transition: 0.5s;
+    svg{
+        height: 1vw!important;
+    }
+    .folder-open{
+        display: none;
+    }
+    p{
+        width: 100%;
+        font-size: 1vw;
+    }
+    &:hover{
+        background: lighten($primaryColor, 5%);
+        transition: 0.5s;
+        transform: translatey(3px);
+        .folder-closed{
+            display: none;
+        }
+        .folder-open{
+            display: flex;
+        }
+    }
+}
+.secondary-button{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 1.5vw;
+    gap: 0.6vw;
+
+    width: fit-content;
+    height: fit-content;
+
+    color: $white;
+    text-decoration: none;
+
+    border: 0.07vw solid $white;
+    border-radius: 0.3vw;
+    transition: 0.5s;
+    p{
+        width: max-content;
+        font-size: 0.8vw;
+    }
+    &:hover{
+        background: darken($white, 90%);
+        transition: 0.5s;
+        transform: translatey(3px);
+    }
+}
+.project-button{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw 1.5vw;
+    gap: 0.6vw;
+
+    width: 100%!important;
+    height: fit-content;
+
+    color: $white;
+    text-decoration: none;
+
+    border-radius: 0.3vw;
+    transition: 0.5s;
+    text-align: center;
+
+    &:hover{
+        background: lighten($primaryColor, 5%);
+        transition: 0.5s;
+        transform: translatey(3px);
+    }
+}
+.resume-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6vw  0.6vw  0.6vw 0.9vw;
+    gap: 0.6vw;
+    backdrop-filter: blur(0.4vw);
+
+    width: fit-content;
+    height: fit-content;
+
+    text-decoration: none;
+    background: rgba(166, 157, 157, 0.1);
+    border-radius: 0.3vw;
+    transition: 0.5s;
+    svg{
+        fill: white;
+        transition: 0.5s;
+    }
+    &:hover{
+        background: lighten($primaryColor, 5%);
+        transform: translatey(0.2vw);
+        svg{
+            transform: rotate(90deg);
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
+.text-button{
+    padding: 0;
+    background: none;
+    border: none;
+    transition: 0.5s;
+    a{            
+        transition: 0.5s;
+        font-family: Montserrat;
+        font-size: 1vw;
+        text-decoration: underline;
+        font-weight: 400;
+        color: $white;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        svg{
+            height: 1.2vw!important;
+            fill: $white;
+            transition: 0.5s;
+        }
+        &:hover{
+            color: $primaryColor;
+            transition: 0.5s;
+            svg{
+                fill: $primaryColor;
+                transform: translateX(0.3vw);
+                transition: 0.5s;
+            }
+        }
+    }
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.6vw;
+    height: 1.8vw;
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+    /* The slider */
+    .slider {
+        border-radius: 0.3vw;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    .slider:before {
+        border-radius: 0.3vw;
+        position: absolute;
+        content: "";
+        height: 1.2vw;
+        width: 1.4vw;
+        left: 0.3vw;
+        bottom: 0.3vw;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: #5A3FFF;
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px #5A3FFF;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(1.6vw);
+        -ms-transform: translateX(1.6vw);
+        transform: translateX(1.6vw);
+        content: "";
+      }    
+}
+  
+  
+  
+  
+
+  

@@ -1,0 +1,33 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 5.3vw 11.7vw 5.3vw 11.7vw;
+    .footer-text-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.3vw;
+    }
+    .footer-resume-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 0.3vw;
+    }
+    img{
+        height: 1.4vw;
+    }
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+    }
+
+}
+      

@@ -1,0 +1,12 @@
+$white: #ffffff;
+$primaryColor: #5A3FFF;
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #5A3FFF;
+  }
+  
+  ::selection {
+    color: white;
+    background: #5A3FFF;
+  }
