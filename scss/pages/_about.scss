@@ -1,0 +1,124 @@
+.about-title-container{
+    width: 100%;
+    padding: 10vw 10vw 2vw 10vw;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    .about-card-title{
+        display: flex;
+        gap: 1vw;
+    }
+    .about-items-left{
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        .bio{
+            display: flex;
+            width: 40vw;
+            height: 23vw;
+            padding: 1.5vw;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1.5vw;
+            flex-shrink: 0;
+            border-radius: 0.5vw;
+            border: 0.06vw solid #2A2240;
+            background: rgba(26, 9, 38, 0.60);
+            backdrop-filter: blur(0.6vw);
+            .bio-items-left{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1vw;
+                align-self: stretch;
+                .bio-img{
+                    height: 6.5vw;
+                }
+                .favorite-tools{
+                    display: flex;
+                    align-items: center;
+                    gap: 1vw;
+                }
+            }
+            .bio-items-right{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                flex: 1 0 0;
+                align-self: stretch;
+                .bio-text-1{
+                    margin-top: 0.8vw;
+                }
+                .bio-text-2{
+                    margin-top: 1.8vw;
+                }
+                .bio-text-3{
+                    margin-top: 1.8vw;
+                }
+            }
+        }
+        .education{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            flex: 1 0 0;
+
+            width: 40vw;
+            padding: 1.5vw;
+            justify-content: center;
+            gap: 1.5vw;
+            border-radius: 0.5vw;
+            border: 0.06vw solid #2A2240;
+            background: rgba(26, 9, 38, 0.60);
+            backdrop-filter: blur(0.6vw);
+        }
+        .contact{
+            display: flex;
+            width: 40vw;
+            padding: 1.5vw;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5vw;
+            border-radius: 0.5vw;
+            border: 0.06vw solid #2A2240;
+            background: rgba(26, 9, 38, 0.60);
+            backdrop-filter: blur(0.6vw);
+        }
+
+    }
+    .about-items-right{
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        .skills{
+            display: flex;
+            width: 40vw;
+            padding: 1.5vw;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5vw;
+            border-radius: 0.5vw;
+            border: 0.06vw solid #2A2240;
+            background: rgba(26, 9, 38, 0.60);
+            backdrop-filter: blur(0.6vw);
+        }
+        .experience{
+            display: flex;
+            width: 40vw;
+            height: 441px;
+            padding: 1.5vw;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5vw;
+            flex-shrink: 0;
+            border-radius: 0.5vw;
+            border: 0.06vw solid #2A2240;
+            background: rgba(26, 9, 38, 0.60);
+            backdrop-filter: blur(0.6vw);
+        }
+    }
+}

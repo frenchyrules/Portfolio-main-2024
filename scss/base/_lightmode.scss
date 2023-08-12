@@ -1,4 +1,8 @@
 .light-mode{
+    .background{
+        z-index: -10!important;
+        background:white;
+    }
     h1{
         color: black;
     }
@@ -11,9 +15,7 @@
     p{
         color: black;
     }
-    .background{
-        background: rgb(255, 255, 255);
-    }
+
     .primary-button{
         h3{
             color: white;
@@ -136,7 +138,6 @@
         }
     }
     .hero-banner{
-        // background: #F6F1ED;
         .intro-pill{
             .location{
                 background: rgba(166, 157, 157, 0.1);
@@ -146,17 +147,7 @@
             }
         }
     }
-    // .projects-section{
-    // }
-    // .experience-section{
-    // }
-    // .methodology-section{
-    // }
-    // .footer{
-    // }
-    // .skill-card{
-    //     background: ;
-    // }
+
     .project-card{
         border: 1px solid #CBD6FF;
         background: #EEF2FF;
