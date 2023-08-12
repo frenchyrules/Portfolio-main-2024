@@ -489,12 +489,27 @@ p {
   transition: 0.5s;
   text-align: center;
 }
+.project-button svg {
+  height: 1.2vw;
+  fill: white;
+}
+.project-button .book-opened {
+  display: none;
+}
 .project-button:hover {
   background: #7059ff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: translatey(3px);
           transform: translatey(3px);
+}
+.project-button:hover .book-closed {
+  display: none;
+}
+.project-button:hover .book-opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .resume-button {
@@ -680,6 +695,7 @@ p {
 }
 
 .project-card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,7 +714,7 @@ p {
           align-items: flex-start;
   border-radius: 0.6vw;
   border: 0.07vw solid #2A2240;
-  background: rgba(26, 9, 38, 0.6);
+  background: #1E0C30;
   -webkit-box-shadow: 0vw 0vw 0vw 0vw rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.09), 0px 8px 5px 0px rgba(0, 0, 0, 0.05), 0px 14px 6px 0px rgba(0, 0, 0, 0.01), 0px 22px 6px 0px rgba(0, 0, 0, 0);
           box-shadow: 0vw 0vw 0vw 0vw rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.09), 0px 8px 5px 0px rgba(0, 0, 0, 0.05), 0px 14px 6px 0px rgba(0, 0, 0, 0.01), 0px 22px 6px 0px rgba(0, 0, 0, 0);
   -webkit-backdrop-filter: blur(0.7vw);
@@ -712,7 +728,7 @@ p {
   font-weight: 700;
 }
 .project-card p {
-  color: #C8C8C8;
+  color: white;
 }
 .project-card .tags {
   display: -webkit-box;
@@ -728,28 +744,111 @@ p {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 0.5vw;
 }
-.project-card .tags .tag-regular:nth-child(1) {
+.project-card .tags .tags-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5vw;
+}
+.project-card .tags .tags-row .tag-regular:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(94, 183, 145, 0.1);
   color: #5EB791;
 }
-.project-card .tags .tag-regular:nth-child(2) {
+.project-card .tags .tags-row .tag-regular:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(187, 60, 247, 0.1);
   color: #BB3CF7;
 }
-.project-card .tags .tag-regular:nth-child(3) {
+.project-card .tags .tags-row2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5vw;
+}
+.project-card .tags .tags-row2 .tag-regular:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(255, 204, 106, 0.1);
   color: #FFCC6A;
 }
-.project-card .tags .tag-regular:nth-child(4) {
+.project-card .tags .tags-row3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5vw;
+}
+.project-card .tags .tags-row3 .tag-regular:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(60, 100, 247, 0.1);
   color: #3C64F7;
 }
-.project-card .tags .tag-regular:nth-child(5) {
+.project-card .tags .tags-row3 .tag-regular:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(247, 60, 172, 0.1);
   color: #F73CAC;
 }
 .project-card .tags .hide-tag {
   opacity: 0;
-}
-.project-card svg {
-  height: 1.2vw;
-  fill: white;
 }
 
 .process-card {
@@ -821,23 +920,113 @@ p {
 }
 
 footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100vw;
+  padding: 5.3vw 11.7vw 5.3vw 11.7vw;
+  gap: 4vw;
+  /* Snackbar Styles */
+}
+footer .label {
+  position: absolute;
+  font-size: 1vw;
+  top: 3.5vw;
+  left: 43vw;
+}
+footer .email {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 20vw;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+  padding: 0.5vw 1vw 0.5vw 2.6vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(166, 157, 157, 0.1);
+  background-image: url(/assets/images/send-plane.svg);
+  background-repeat: no-repeat;
+  background-position: 0.5vw;
+  border: 0.06vw solid #423C3C;
+  border-radius: 0.4vw;
+  stroke: none;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1vw;
+  color: rgb(183, 183, 183);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+footer .email:hover {
+  color: white;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+footer .snackbar-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .snackbar-container #snackbar {
+  visibility: hidden;
+  width: 16vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5A3FFF;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  padding: 8px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  font-family: Montserrat;
+  font-size: 1vw;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, bottom 0.5s;
+  transition: opacity 0.3s, bottom 0.5s;
+}
+footer .snackbar-container #snackbar.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 10vw; /* Adjust this value to control how far up the snackbar slides */
+}
+footer section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 100%;
-  padding: 5.3vw 11.7vw 5.3vw 11.7vw;
 }
-footer .footer-text-container {
+footer section .footer-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,7 +1039,7 @@ footer .footer-text-container {
           align-items: center;
   gap: 0.3vw;
 }
-footer .footer-resume-link {
+footer section .footer-resume-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,13 +1055,13 @@ footer .footer-resume-link {
           flex-direction: row;
   gap: 0.3vw;
 }
-footer img {
+footer section img {
   height: 1.4vw;
 }
-footer a {
+footer section a {
   text-decoration: none;
 }
-footer a:hover {
+footer section a:hover {
   text-decoration: underline;
   text-decoration-color: white;
 }
@@ -1357,13 +1546,14 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1vw;
+  margin-bottom: 8vw;
 }
 main .about-card-title {
   display: -webkit-box;
@@ -1386,7 +1576,7 @@ main .about-items-left .bio {
   display: -ms-flexbox;
   display: flex;
   width: 40vw;
-  height: 23vw;
+  height: 100%;
   padding: 1.5vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1472,9 +1662,7 @@ main .about-items-left .education {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 0px;
-          flex: 1 0 0;
+  height: 100% !important;
   width: 40vw;
   padding: 1.5vw;
   justify-content: center;
@@ -1485,24 +1673,66 @@ main .about-items-left .education {
   -webkit-backdrop-filter: blur(0.6vw);
           backdrop-filter: blur(0.6vw);
 }
-main .about-items-left .contact {
+main .about-items-left .experience-years {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40vw;
-  padding: 1.5vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: auto;
+  width: 40vw;
+  padding: 1.5vw;
+  justify-content: center;
   gap: 1.5vw;
   border-radius: 0.5vw;
   border: 0.06vw solid #2A2240;
   background: rgba(26, 9, 38, 0.6);
   -webkit-backdrop-filter: blur(0.6vw);
           backdrop-filter: blur(0.6vw);
+}
+main .about-items-left .experience-years .experience-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: rows;
+          flex-direction: rows;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .about-items-left .experience-years .experience-row .experience-token {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .about-items-left .experience-years .experience-row .experience-token .xp {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 0.5vw;
+  text-align: center;
+  padding: 0.1vw 0.5vw 0.1vw 0.5vw;
+  background: rgba(89, 63, 255, 0.1254901961);
+  border-radius: 0.2vw;
+  color: white;
 }
 main .about-items-right {
   display: -webkit-box;
@@ -1518,14 +1748,18 @@ main .about-items-right .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 40vw;
   padding: 1.5vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 1.5vw;
   border-radius: 0.5vw;
   border: 0.06vw solid #2A2240;
@@ -1537,15 +1771,19 @@ main .about-items-right .experience {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 40vw;
-  height: 441px;
+  height: 29.5vw;
   padding: 1.5vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 1.5vw;
   -ms-flex-negative: 0;
       flex-shrink: 0;

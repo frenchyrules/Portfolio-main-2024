@@ -1,3 +1,19 @@
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  navigator.clipboard.writeText(copyText.value).then(function() {
+    // Show the snackbar when the copy operation is successful
+    var snackbar = document.getElementById("snackbar");
+    snackbar.className = "show";
+    setTimeout(function() {
+      snackbar.className = snackbar.className.replace("show", "");
+    }, 3000); // Change 3000 to the number of milliseconds you want the snackbar to be visible
+  });
+}
+
 // particles
 particlesJS('particles-js',
   

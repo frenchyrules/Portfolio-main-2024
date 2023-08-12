@@ -84,11 +84,24 @@
     border-radius: 0.3vw;
     transition: 0.5s;
     text-align: center;
+    svg{
+        height: 1.2vw;
+      fill: white;
+    }
+    .book-opened{
+        display: none;
+    }
 
     &:hover{
         background: lighten($primaryColor, 5%);
         transition: 0.5s;
         transform: translatey(3px);
+        .book-closed{
+            display: none;
+        }
+        .book-opened{
+            display: flex;
+        }
     }
 }
 .resume-button{
