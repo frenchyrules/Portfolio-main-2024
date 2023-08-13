@@ -50,7 +50,6 @@
     width: fit-content;
     height: fit-content;
 
-    color: $white;
     text-decoration: none;
 
     border: 0.07vw solid $white;
@@ -59,6 +58,7 @@
     p{
         width: max-content;
         font-size: 0.8vw;
+        color: $primaryColor!important;
     }
     &:hover{
         background: darken($white, 90%);
@@ -105,31 +105,52 @@
     }
 }
 .resume-button{
+    margin-left: 1.5vw;
     display: flex;
-    flex-direction: row;
+    padding: 0.03vw;
     justify-content: center;
     align-items: center;
-    padding: 0.6vw  0.6vw  0.6vw 0.9vw;
-    gap: 0.6vw;
-    backdrop-filter: blur(0.4vw);
-
-    width: fit-content;
-    height: fit-content;
-
+    gap: 0.3vw;
+    border-radius: 0.15vw;
+    background: linear-gradient(90deg, #5A3FFF 0%, #BB3CF7 100%);
     text-decoration: none;
-    background: rgba(166, 157, 157, 0.1);
-    border-radius: 0.3vw;
     transition: 0.5s;
-    svg{
-        fill: white;
+    .text-wrapper{
+        display: flex;
+        padding: 0.3vw 0.46vw 0.3vw 0.46vw;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3vw;
+        border-radius: 0.15vw;
+        background: #1A1128;
         transition: 0.5s;
-    }
-    &:hover{
-        background: lighten($primaryColor, 5%);
-        transform: translatey(0.2vw);
+        p{
+            transition: 0.5s;
+            background: linear-gradient(90deg, #5A3FFF 0%, #BB3CF7 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 0.8vw!important;
+            font-weight: 600;
+        }
         svg{
-            transform: rotate(90deg);
-            transition: 0.3s ease-in-out;
+            transition: 0.5s;
+            fill: #BB3CF7;
+        }
+        &:hover{
+            transition: 0.5s;
+            background: linear-gradient(90deg, #5A3FFF 0%, #BB3CF7 100%);
+            p{
+                transition: 0.5s;
+                background: white;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            svg{
+                transition: 0.5s;
+                fill: white;
+            }
         }
     }
 }
@@ -142,7 +163,7 @@
         transition: 0.5s;
         font-family: Montserrat;
         font-size: 1vw;
-        text-decoration: underline;
+        text-decoration:none;
         font-weight: 400;
         color: $white;
         display: flex;

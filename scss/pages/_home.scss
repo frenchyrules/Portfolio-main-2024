@@ -27,7 +27,12 @@ body{
     align-items: center;
     padding: 9.5vw;
     height: 53vw;
-    position: relative;
+    position: relative;    
+    h3{
+        span{
+            font-weight: 700;
+        }
+    }
     .hero-items-left{
         display: flex;
         flex-direction: column;
@@ -85,7 +90,6 @@ body{
             left: -5%;
             z-index: -1;
         }
-        }
         .hero-banner-card:nth-child(1){
             top: 35%;
             left: 84%;
@@ -114,15 +118,17 @@ body{
             }
         }
     }
-
-    
-    h3{
-        span{
-            font-weight: 700;
-        }
-    }
-
+}
 .projects-section{
+    @keyframes verticalMovement {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(0.25vw); /* Adjust this value to control the vertical movement distance */
+        }
+      }
+
     height: auto;
     width: 100%;
     padding: 10vw 9.5vw;
@@ -146,6 +152,22 @@ body{
                 fill: white;
             }
         }
+        button{
+            position: relative;
+            animation: verticalMovement 1s infinite alternate ease-in-out;
+            // margin-top: 0vw;
+            svg{
+                margin-left: 0.5vw;
+            }
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+        span{
+            margin: 0vw 0.2vw 0.2vw 0vw;
+            color: $primaryColor;
+            font-size: 2vw;
+        }
     }
     .project-card-row{
         display: flex;
@@ -162,35 +184,6 @@ body{
     }
 }
 
-.experience-section{
-    padding: 10vw 9.5vw;
-    height: auto;
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-    // background-image: url(/assets/images/solar\ system.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    .text{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.9vw;
-        margin-bottom: 2vw;
-    }
-    .skill-card-row{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0.5vw;
-        gap: 3vw;
-    }
-}
 .methodology-section{
     height: fit-content;
     width: 100%;
@@ -200,6 +193,23 @@ body{
     gap: 3.7vw;
     align-items: center;
     justify-content: center;
+    .section-intro{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p{
+            font-size: 1vw;
+            color: white;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            svg{
+                fill: white;
+            }
+        }
+    }
     .process-card-row{
         position: relative;
         display: flex;

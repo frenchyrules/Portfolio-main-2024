@@ -15,7 +15,7 @@ header{
         gap: 0.6vw;
         border-radius: 0.6vw;
         border: 0.07vw solid #2A2240;
-        background: rgba(166, 157, 157, 0.10);
+        background: #23193186;
         backdrop-filter: blur(0.7vw);
         transition: 0.5s;
         .toggle-switch{
@@ -38,11 +38,15 @@ header{
             position: relative;
             svg{
                 position: absolute;
-                height: 1.5vw!important;
+                height: 0.7vw!important;
                 opacity: 0;
-                top: 0.65vw;
-                left: 0.3vw;
-                transition: transform 0.5s, opacity 0.5s;
+                top: 0.85vw;
+                left: 1.3vw;
+                transition: transform 0.5s, opacity 0.3s;
+                fill: white;
+            }
+            .projects-svg{
+                left: 0.9vw;
             }
             p{
                 font-size: 0.8vw!important;
