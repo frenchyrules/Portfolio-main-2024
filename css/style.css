@@ -857,7 +857,7 @@ p {
   display: inline-flex;
   padding: 1.8vw;
   width: 33.8vw;
-  height: 10.7vw;
+  height: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
