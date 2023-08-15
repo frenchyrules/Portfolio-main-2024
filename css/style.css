@@ -1835,3 +1835,149 @@ main .about-items-right .experience {
   -webkit-backdrop-filter: blur(0.6vw);
           backdrop-filter: blur(0.6vw);
 }
+
+.projects-title-container {
+  width: 100%;
+  padding: 10vw 10vw 2vw 10vw;
+}
+
+.projects-section-first {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 6vw 9.5vw 4vw 9.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.projects-section-first .projects-illustration {
+  position: absolute;
+  top: -22%;
+  right: 0%;
+  height: 80vw;
+  z-index: -1;
+}
+.projects-section-first .project-section-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5vw;
+}
+.projects-section-first .project-card-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 3.7vw;
+  gap: 2vw;
+}
+.projects-section-first .project-card-row a {
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.projects-section-first .project-card-row .project-card {
+  position: relative;
+  width: 18vw;
+}
+.projects-section-first .project-card-row .project-card .card-fire {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 40%;
+}
+
+.projects-section-second {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 2vw 9.5vw 10vw 9.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.projects-section-second .project-section-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5vw;
+}
+.projects-section-second .project-card-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 3.7vw;
+  gap: 2vw;
+}
+.projects-section-second .project-card-row a {
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.projects-section-second .project-card-row .project-card {
+  position: relative;
+  width: 18vw;
+}
+.projects-section-second .project-card-row .project-card .card-fire {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 40%;
+}
