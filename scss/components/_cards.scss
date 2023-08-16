@@ -98,6 +98,16 @@
                 background: rgba(255, 204, 106, 0.10);
                 color: #FFCC6A;
             }
+            .tag-regular:nth-child(2){
+                display: flex;
+                padding:  0.2vw 0.5vw;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5vw;
+                border-radius: 0.2vw;
+                background: rgba(247, 60, 172, 0.10);
+                color: #F73CAC;
+            }
         }
         .tags-row3{
             width: 100%;
