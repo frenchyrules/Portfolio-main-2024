@@ -237,7 +237,27 @@
         content: "";
       }    
 }
-  
+
+// RESPONSIVE
+@media (max-width: 768px){
+    .primary-button{
+        width: 100%;
+        padding: 3vw 3vw;
+        gap: 2vw;
+        border-radius: 1vw;
+
+        svg{
+            height: 5vw!important;
+        }
+    }
+    .secondary-button{
+        width: 100%;
+        padding: 3vw 3vw;
+        gap: 0.6vw;
+        border: none;
+        border-radius: 1vw;
+    }
+}
   
   
   

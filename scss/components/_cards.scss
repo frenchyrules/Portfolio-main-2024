@@ -183,3 +183,137 @@
         margin-top: -2vw;
     }
 }
+
+// RESPONSIVE
+@media (max-width: 768px){
+    .skill-card{
+        display: flex;
+        width: 24vw;
+        padding: 2.5vw 6.2vw 2.5vw 5vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.3vw;
+        border-radius: 0.6vw;
+        border: 0.07vw solid #2A2240;
+        background: rgba(26, 9, 38, 0.60);
+        backdrop-filter: blur(0.7vw);
+          svg{
+              fill: white;
+              height: 1.8vw;
+              width: auto;    
+          }
+          h3{
+              color: #FFFFFF;
+              text-align: center;
+          }
+          p{
+              color: #656565;
+          }
+          &:hover{
+              border: 0.07vw solid #5A3FFF;
+              transition: 0.5s ease-in-out;
+          }
+    }
+    .project-card{
+          position: relative;
+          display: flex;
+          width:57.5vw;
+          height: 90vw;
+          padding: 3vw;
+          border-radius: 1vw;
+          border: 0.07vw solid #2A2240;
+          box-shadow: 0vw 0vw 0vw 0vw rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.10), 0px 4px 4px 0px rgba(0, 0, 0, 0.09), 0px 8px 5px 0px rgba(0, 0, 0, 0.05), 0px 14px 6px 0px rgba(0, 0, 0, 0.01), 0px 22px 6px 0px rgba(0, 0, 0, 0.00);
+          backdrop-filter: blur(0.7vw);
+
+          .project-description{
+            font-family: Source Code Pro;
+            color: #C8C8C8;
+          }
+        .tags{
+              gap: 2vw;
+              display: flex;
+              align-items: flex-start;
+              .tags-row{
+                  gap: 1vw;
+                  .tag-regular:nth-child(1){
+                      padding:  0.2vw 0.5vw;
+                      gap: 2vw;
+                      border-radius: 0.8vw;
+                      background: rgba(94, 183, 145, 0.10);
+                  }
+                  .tag-regular:nth-child(2){
+                      padding:  0.2vw 0.5vw;
+                      gap: 2vw;
+                      border-radius: 0.8vw;
+                  }
+              }
+              .tags-row2{
+                  width: 100%;
+                  display: flex;
+                  gap: 2vw;
+                  .tag-regular:nth-child(1){
+                      padding:  0.2vw 0.5vw;
+                      gap: 2vw;
+                      border-radius: 0.8vw;
+                  }
+                  }
+                .tags-row3{
+                    gap: 2vw;
+                .tag-regular:nth-child(1){
+                    padding:  0.2vw 0.5vw;
+                    gap: 2vw;
+                    border-radius: 0.8vw;
+                }
+                .tag-regular:nth-child(2){
+                    padding:  0.2vw 0.5vw;
+                    gap: 2vw;
+                    border-radius: 0.8vw;
+                }
+          }
+        }
+
+    } 
+    .process-card{
+            display: inline-flex;
+            padding: 1.8vw;
+            width:  33.8vw;
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1.25vw;
+            border-radius: 1.25vw;
+            border: 0.07vw solid #2A2240;
+            background: #1E0C30;
+            backdrop-filter: blur(0.7vw);
+            .title-container{
+              display: flex;
+              gap: 1.25vw;
+            }
+            svg{
+              height: 1vw;
+            }
+    }
+    .hero-banner-card{
+              padding: 1.3vw 2vw 1.3vw 2vw;
+              gap: 0.2vw;
+              border-radius: 1vw;
+              background: rgba(166, 157, 157, 0.30);
+              backdrop-filter: blur(0.6vw);
+              p{
+                font-size: 2vw!important;
+            }
+              .xp{
+                  font-size: 2vw!important;
+                  font-weight: 600;
+                  color: #5EB791!important;
+              }
+              svg{
+                width: 5vw!important;
+                margin-top: -4vw!important;
+            }
+    }
+}
+
+    

@@ -201,6 +201,21 @@ gsap.to(".last", {
 // ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // ScrollTrigger.refresh(); 
 
+// CAROUSELS
+const carousel = document.querySelector('.carousel');
+const container = document.querySelector('.carousel-container');
+
+carousel.addEventListener('scroll', () => {
+  const cardWidth = carousel.querySelector('.card').offsetWidth + 16; // 16px is the gap
+  const containerWidth = container.offsetWidth;
+  const scrollLeft = carousel.scrollLeft;
+  const maxScroll = carousel.scrollWidth - containerWidth + 24; // 24px right padding
+
+  if (scrollLeft >= maxScroll) {
+    // Limit the scroll position to keep the last card within 24px from the right edge
+    carousel.scrollLeft = maxScroll;
+  }
+});
 
 
 

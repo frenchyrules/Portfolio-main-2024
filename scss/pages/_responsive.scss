@@ -1,8 +1,173 @@
 // MOBILE
 @media (max-width: 768px){
+header{
+    display: none;
+}
 .hero-banner{
-    margin-top: 10vw;
+    height: 200vw;
+    width: 100%;
+    margin-top: 15vw;
+    margin-bottom: 45vw;
     flex-direction: column!important;
-    padding: 10vw 0vw 10vw 0vw;
+    padding: 0vw 5vw 0vw 5vw!important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .menu-bg{
+        position: absolute;
+        top: -10%;
+        left: 0%;
+        width: 10em;
+        height: 20em;
+        flex-shrink: 0;
+        background-color: #9D5088;
+        filter: blur(222px);
+        z-index: -1;
+    }
+    .hero-items-left{
+        width: fit-content;
+        .intro-pill{
+            display: inline-flex;
+            align-items: flex-end;
+            gap: 1.2vw;
+            .location{
+                display: flex;
+                padding: 1vw 2vw 1vw 1vw;
+                justify-content: center;
+                align-items: center;
+                gap: 4px;
+                border-radius: 4px;
+                background: rgba(166, 157, 157, 0.20);
+            }
+            svg{
+                height: 5vw;
+            }
+        }
+        .text-button{
+            display: none;
+        }
+        .primary-button{
+            margin-top: 8vw!important;
+        }
+        .secondary-button{
+            display: flex;
+        }
+    }
+    .hero-items-right {
+        position: relative;
+        width: 150%;
+        height: 100%;
+        img{
+            position: absolute;
+            right: -30vw!important;
+        }
+        .bg-circle{
+            display: none;
+            position: absolute;
+            top: -20%;
+            z-index: -1;
+        }
+        .hero-banner-card{
+            position: absolute;
+            top: 60%;
+            left: 25%;
+            z-index: -1;
+        }
+        .hero-banner-card:nth-child(1){
+            top: 120%;
+            left: 45%;
+            z-index: -1;
+
+        }
+        .hero-banner-card:nth-child(2){
+            top: 15%;
+            left: 50%;
+            z-index: 1;
+        }
+        .hero-banner-card:nth-child(3){
+            top: 75%;
+            left: 60%;
+            z-index: 1;
+        }
+    }
+}
+.projects-section{
+    display: none;
+    .text-button{
+        display: none;
+    }
+}
+.projects-section-mobile{
+    display: flex!important;
+    flex-direction: column;
+    gap: 10vw;
+
+    .project-card-row-wrapper{
+        height: fit-content;
+        width: 100%;
+        padding: 0vw 5vw 0vw 5vw!important;
+        position: relative; /* Add relative positioning for the pseudo-element */
+        overflow-x: auto;  /* Enable horizontal scrolling */
+
+        /* Hide the scrollbar without impacting horizontal scroll */
+        &::-webkit-scrollbar {
+          width: 0;
+          background: transparent;
+        }
+      
+        &::-webkit-scrollbar-thumb {
+          background: transparent;
+        }
+        &::before {
+            content: ''; /* Create a pseudo-element for the right padding */
+            width: 24px; /* Set the desired right padding */
+            flex: 0 0 auto;
+          }
+    }
+    .section-intro{
+        gap: 4vw!important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0vw 5vw 0vw 5vw!important;
+
+        p{
+            font-size: 1vw;
+            color: white;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            svg{
+                fill: white;
+            }
+        }
+        button{
+            position: relative;
+            animation: verticalMovement 1s infinite alternate ease-in-out;
+            // margin-top: 0vw;
+            svg{
+                margin-left: 0.5vw;
+            }
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+        span{
+            margin: 0vw 0.2vw 0.2vw 0vw;
+            color: $primaryColor;
+            font-size: 2vw;
+        }
+    }
+    .project-card-row{
+        display: inline-flex; /* Display cards in a row */
+        gap: 6vw; /* Space between cards */
+        transition: transform 0.3s ease; /* Smooth transition when scrolling */
+        a{
+            text-decoration: none;
+            width: fit-content;
+        }
+    }
 }
 }
