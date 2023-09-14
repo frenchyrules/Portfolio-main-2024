@@ -109,31 +109,17 @@
 
     <nav role="mobile-navigation">
         <div id="menuToggle">
-          <!--
-          A fake / hidden checkbox is used as click reciever,
-          so you can use the :checked selector on it.
-          -->
           <input type="checkbox" />
-          
-          <!--
-          Some spans to act as a hamburger.
-          
-          They are acting like a real hamburger,
-          not that McDonalds stuff.
-          -->
+
           <span></span>
           <span></span>
           <span></span>
           
-          <!--
-          Too bad the menu has to be inside of the button
-          but hey, it's pure CSS magic.
-          -->
           <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Projects</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="" class="resume-button">
+            <a href="index.html"><li>Home</li></a>
+            <a href="projects.html"><li>Projects</li></a>
+            <a href="about.html"><li>About</li></a>
+            <!-- <a href="" class="resume-button">
                 <div class="text-wrapper">
                     <p>Resume</p>
                     <svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
@@ -142,9 +128,15 @@
                         </g>
                     </svg>   
                 </div>
-            </a>  
+            </a>   -->
           </ul>
         </div>
+        <a href="index.html"><svg id="logo" viewBox="0 0 37 30" xmlns="http://www.w3.org/2000/svg">
+            <path class="whitebit"
+                d="M0.12 30L10.64 0.799999H17.28L28.12 30H24.08L14.28 3.36L16.2 4.32H11.48L13.52 3.36L4.04 30H0.12ZM6.4 21.28L7.72 17.76H20.32L21.64 21.28H6.4Z" />
+            <path class="bluebit" d="M32.1544 30V25.12H36.7944V30H32.1544Z" />
+        </svg>                
+        </a>
       </nav>
 
     <div data-scroll-container class="background">
