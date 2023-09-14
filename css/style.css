@@ -1702,12 +1702,6 @@ header .links-container svg:hover .bluebit {
   }
   nav #menuToggle a {
     text-decoration: none;
-    color: #232323;
-    -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-  }
-  nav #menuToggle a:hover {
-    color: tomato;
   }
   nav #menuToggle input {
     display: block;
@@ -1784,9 +1778,9 @@ header .links-container svg:hover .bluebit {
   }
   nav #menu li {
     text-align: center;
-    padding: 10vw 0;
+    padding: 12vw 0;
     font-family: Sora;
-    font-size: 4vw;
+    font-size: 8vw;
     font-weight: 300;
     line-height: 2.5vw;
     letter-spacing: 0em;

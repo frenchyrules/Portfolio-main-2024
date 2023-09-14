@@ -150,12 +150,6 @@ header{
     
       a {
         text-decoration: none;
-        color: #232323;
-        transition: color 0.3s ease;
-    
-        &:hover {
-          color: tomato;
-        }
       }
     
       input {
@@ -226,10 +220,10 @@ header{
     
       li {
         text-align: center;
-        padding: 10vw 0;
+        padding: 12vw 0;
         font-family: Sora;
         // font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-        font-size: 4vw;
+        font-size: 8vw;
         font-weight: 300;
         line-height: 2.5vw;
         letter-spacing: 0em;
