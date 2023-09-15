@@ -115,12 +115,12 @@ footer{
         .label{
             position: absolute;
             font-size: 1vw;
-            top: 3.5vw;
-            left: 43vw;
+            top: 1vw;
+            left: 12vw;
         }
         .email {
             height: fit-content;
-            width: 20vw;
+            width: 75vw;
             margin-right: auto;
             margin-left: auto;
             cursor: pointer;
@@ -130,6 +130,7 @@ footer{
             background: rgba(166, 157, 157, 0.10);
             background-image: url(/assets/images/send-plane.svg);
             background-repeat: no-repeat;
+            background-size: 4vw;
             background-position: 0.5vw;
             border: 0.06vw solid #9e9e9e;
             border-radius: 0.4vw;
@@ -137,7 +138,7 @@ footer{
             text-align: center;
         
             font-family: Montserrat;
-            font-size: 1vw;
+            font-size: 4vw;
             color: rgb(183, 183, 183);
             transition: 0.5s;
             &:hover{
@@ -154,7 +155,7 @@ footer{
             justify-content: center;
             #snackbar {
                 visibility: hidden;
-                width: 16vw;
+                width: fit-content;
                 margin-left: auto;
                 margin-right: auto;
                 background-color: $primaryColor;
@@ -167,7 +168,7 @@ footer{
                 // left: auto;
                 bottom: 30px;
                 font-family: Montserrat;
-                font-size: 1vw;
+                font-size: 4vw;
                 opacity: 0;
                 transition: opacity 0.3s, bottom 0.5s;
             }

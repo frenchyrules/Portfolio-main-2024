@@ -1139,8 +1139,8 @@ p {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    padding: 1.8vw;
-    width: 33.8vw;
+    padding: 4vw;
+    width: 60vw;
     height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1166,7 +1166,7 @@ p {
     gap: 1.25vw;
   }
   .process-card svg {
-    height: 1vw;
+    height: 4.5vw;
   }
   .hero-banner-card {
     padding: 1.3vw 2vw 1.3vw 2vw;
@@ -1357,14 +1357,14 @@ footer section a:hover {
   footer .label {
     position: absolute;
     font-size: 1vw;
-    top: 3.5vw;
-    left: 43vw;
+    top: 1vw;
+    left: 12vw;
   }
   footer .email {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 20vw;
+    width: 75vw;
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
@@ -1378,13 +1378,14 @@ footer section a:hover {
     background: rgba(166, 157, 157, 0.1);
     background-image: url(/assets/images/send-plane.svg);
     background-repeat: no-repeat;
+    background-size: 4vw;
     background-position: 0.5vw;
     border: 0.06vw solid #9e9e9e;
     border-radius: 0.4vw;
     stroke: none;
     text-align: center;
     font-family: Montserrat;
-    font-size: 1vw;
+    font-size: 4vw;
     color: rgb(183, 183, 183);
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -1410,7 +1411,9 @@ footer section a:hover {
   }
   footer .snackbar-container #snackbar {
     visibility: hidden;
-    width: 16vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
     background-color: #5A3FFF;
@@ -1422,7 +1425,7 @@ footer section a:hover {
     z-index: 1;
     bottom: 30px;
     font-family: Montserrat;
-    font-size: 1vw;
+    font-size: 4vw;
     opacity: 0;
     -webkit-transition: opacity 0.3s, bottom 0.5s;
     transition: opacity 0.3s, bottom 0.5s;
@@ -1967,7 +1970,7 @@ body #particles-js {
 .projects-section {
   height: auto;
   width: 100%;
-  padding: 10vw 9.5vw;
+  padding: 0vw 9.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2140,6 +2143,10 @@ body #particles-js {
 }
 .methodology-section h3 {
   font-weight: 700;
+}
+
+.methodology-section-mobile {
+  display: none !important;
 }
 
 .about-title-container {
@@ -2681,6 +2688,9 @@ main .about-items-right .experience {
             flex-direction: column;
     gap: 10vw;
   }
+  .projects-section-mobile .button-wrapper {
+    padding: 0vw 8vw 0vw 8vw !important;
+  }
   .projects-section-mobile .project-card-row-wrapper {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -2734,6 +2744,7 @@ main .about-items-right .experience {
   }
   .projects-section-mobile .section-intro div svg {
     fill: white;
+    height: 4vw !important;
   }
   .projects-section-mobile .section-intro button {
     position: relative;
@@ -2763,6 +2774,114 @@ main .about-items-right .experience {
     transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* Smooth transition when scrolling */
   }
   .projects-section-mobile .project-card-row a {
+    text-decoration: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .methodology-section {
+    display: none;
+  }
+  .methodology-section-mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10vw;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+  }
+  .methodology-section-mobile .methodology-card-row-wrapper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    padding: 0vw 5vw 0vw 5vw !important;
+    position: relative; /* Add relative positioning for the pseudo-element */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    /* Hide the scrollbar without impacting horizontal scroll */
+  }
+  .methodology-section-mobile .methodology-card-row-wrapper::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  .methodology-section-mobile .methodology-card-row-wrapper::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .methodology-section-mobile .methodology-card-row-wrapper::before {
+    content: ""; /* Create a pseudo-element for the right padding */
+    width: 24px; /* Set the desired right padding */
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .methodology-section-mobile .methodology-card-row-wrapper:nth-child(3) {
+    margin-top: -5vw;
+  }
+  .methodology-section-mobile .methodology-card-row-wrapper:nth-child(4) {
+    margin-top: -5vw;
+  }
+  .methodology-section-mobile .section-intro {
+    gap: 4vw !important;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0vw 5vw 0vw 5vw !important;
+  }
+  .methodology-section-mobile .section-intro p {
+    font-size: 1vw;
+    color: white;
+  }
+  .methodology-section-mobile .section-intro div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .methodology-section-mobile .section-intro div svg {
+    fill: white;
+  }
+  .methodology-section-mobile .section-intro button {
+    position: relative;
+    -webkit-animation: verticalMovement 1s infinite alternate ease-in-out;
+            animation: verticalMovement 1s infinite alternate ease-in-out;
+  }
+  .methodology-section-mobile .section-intro button svg {
+    margin-left: 0.5vw;
+  }
+  .methodology-section-mobile .section-intro button:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+  .methodology-section-mobile .section-intro span {
+    margin: 0vw 0.2vw 0.2vw 0vw;
+    color: #5A3FFF;
+    font-size: 2vw;
+  }
+  .methodology-section-mobile .methodology-card-row {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; /* Display cards in a row */
+    gap: 6vw; /* Space between cards */
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* Smooth transition when scrolling */
+  }
+  .methodology-section-mobile .methodology-card-row a {
     text-decoration: none;
     width: -webkit-fit-content;
     width: -moz-fit-content;
