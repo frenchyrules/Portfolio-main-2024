@@ -727,6 +727,55 @@ p {
   content: "";
 }
 
+.chip {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #fff; /* White stroke */
+  border-radius: 16px;
+  padding: 8px 16px; /* Adjusted padding */
+  margin: 4px; /* Add some margin between chips */
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: 500;
+}
+.chip:hover {
+  background-color: rgba(255, 255, 255, 0.129); /* Slight gray on hover */
+}
+.chip.selected {
+  background-color: #fff; /* White background for selected chips */
+  border-color: #fff; /* White border for selected chips */
+  color: #000; /* Black text for selected chips */
+}
+.chip.selected .chip-label {
+  margin-left: 8px; /* Add 8px spacing between the check and text */
+  color: #000; /* Black text for selected chips */
+}
+.chip.selected .check-icon {
+  fill: #000; /* Black checkmark for selected chips */
+  display: block; /* Display the checkmark for selected chips */
+}
+.chip .chip-label {
+  color: #fff; /* White text for unselected chips */
+}
+.chip .check-icon {
+  width: 24px;
+  height: 24px;
+  display: none; /* Initially, hide the checkmark icon */
+  fill: #fff; /* White checkmark for unselected chips */
+}
+
 @media (max-width: 768px) {
   .primary-button {
     width: 100%;
@@ -2411,7 +2460,7 @@ main .about-items-right .experience {
   padding: 10vw 10vw 2vw 10vw;
 }
 
-.projects-section-first {
+.projects-section-main {
   position: relative;
   height: auto;
   width: 100%;
@@ -2430,14 +2479,13 @@ main .about-items-right .experience {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.projects-section-first .projects-illustration {
-  position: absolute;
-  top: -37%;
-  right: 0%;
-  height: 80vw;
-  z-index: -1;
+.projects-section-main .chips-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: -2vw;
 }
-.projects-section-first .project-section-title {
+.projects-section-main .project-section-title {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2450,10 +2498,10 @@ main .about-items-right .experience {
           align-items: center;
   gap: 0.5vw;
 }
-.projects-section-first .project-section-title svg {
+.projects-section-main .project-section-title svg {
   height: 1.5vw;
 }
-.projects-section-first .project-card-row {
+.projects-section-main .project-card-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2471,91 +2519,15 @@ main .about-items-right .experience {
   margin-top: 3.7vw;
   gap: 2vw;
 }
-.projects-section-first .project-card-row a {
+.projects-section-main .project-card-row a {
   text-decoration: none;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-.projects-section-first .project-card-row .project-card {
+.projects-section-main .project-card-row .project-card {
   position: relative;
   width: 18vw;
-}
-.projects-section-first .project-card-row .project-card .card-fire {
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  width: 40%;
-}
-
-.projects-section-second {
-  position: relative;
-  height: auto;
-  width: 100%;
-  padding: 2vw 9.5vw 10vw 9.5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-.projects-section-second .project-section-title {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.5vw;
-}
-.projects-section-second .project-section-title svg {
-  height: 1.5vw;
-}
-.projects-section-second .project-card-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin-top: 3.7vw;
-  gap: 2vw;
-}
-.projects-section-second .project-card-row a {
-  text-decoration: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.projects-section-second .project-card-row .project-card {
-  position: relative;
-  width: 18vw;
-}
-.projects-section-second .project-card-row .project-card .card-fire {
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  width: 40%;
 }
 
 @media (max-width: 768px) {

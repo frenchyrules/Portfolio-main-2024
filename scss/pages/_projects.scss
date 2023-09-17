@@ -35,7 +35,7 @@
     width: 100%;
     padding: 10vw 10vw 2vw 10vw;
 }
-.projects-section-first{
+.projects-section-main{
     position: relative;
     height: auto;
     width: 100%;
@@ -44,12 +44,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    .projects-illustration{
-        position: absolute;
-        top: -37%;
-        right: 0%;
-        height: 80vw;
-        z-index: -1;
+    .chips-container{
+        display: flex;
+        margin-bottom: -2vw;
     }
     .project-section-title{
         width: 100%;
@@ -76,57 +73,6 @@
         .project-card{
             position: relative;
             width: 18vw;
-            // overflow: hidden;
-            .card-fire{
-                position: absolute;
-                top: 0%;
-                right: 0%;
-                width: 40%;
-            }
-        }
-    }
-}
-.projects-section-second{
-    position: relative;
-    height: auto;
-    width: 100%;
-    padding: 2vw 9.5vw 10vw 9.5vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    .project-section-title{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap:  0.5vw;
-        svg{
-            height: 1.5vw;
-        }
-    }
-    .project-card-row{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        width:100%;
-        margin-top: 3.7vw;
-        gap: 2vw;
-        a{
-            text-decoration: none;
-            width: fit-content;
-        }
-        .project-card{
-            position: relative;
-            width: 18vw;
-            // overflow: hidden;
-            .card-fire{
-                position: absolute;
-                top: 0%;
-                right: 0%;
-                width: 40%;
-            }
         }
     }
 }

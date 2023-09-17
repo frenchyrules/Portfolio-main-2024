@@ -1,3 +1,48 @@
+// CHIP FILTERS
+// JavaScript to handle chip selection and card filtering
+const chips = document.querySelectorAll(".chip");
+const projectCard = document.querySelectorAll(".project-card"); // Updated class name
+
+chips.forEach((chip, index) => {
+    chip.addEventListener("click", () => {
+        // Deselect all chips
+        chips.forEach(otherChip => {
+            otherChip.classList.remove("selected");
+            otherChip.querySelector(".check-icon").style.display = "none"; // Hide all checkmarks
+        });
+
+        // Select the clicked chip
+        chip.classList.add("selected");
+
+        // Show the checkmark for the selected chip
+        chip.querySelector(".check-icon").style.display = "block";
+
+        // Get the chip's ID to determine which cards to show
+        const chipId = chip.id;
+
+        // Show or hide cards based on the chip selected
+        projectCard.forEach(card => { // Updated class name
+            if (chipId === "chip1") {
+                // Show all cards for Alpha
+                card.style.display = "flex";
+            } else if (chipId === "chip2") {
+                // Show only Beta-related cards
+                card.style.display = card.classList.contains("beta") ? "flex" : "none";
+            } else if (chipId === "chip3") {
+                // Show only Delta-related cards
+                card.style.display = card.classList.contains("delta") ? "flex" : "none";
+            }
+        });
+    });
+});
+
+// JavaScript to trigger a click on Alpha chip when the page loads
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('chip1').click();
+});
+
+
+
 function myFunction() {
   var copyText = document.getElementById("myInput");
 
@@ -216,6 +261,4 @@ carousel.addEventListener('scroll', () => {
     carousel.scrollLeft = maxScroll;
   }
 });
-
-
 
