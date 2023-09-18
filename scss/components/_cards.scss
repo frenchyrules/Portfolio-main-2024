@@ -46,11 +46,29 @@
         width: 100%;
         height: auto;
     }
-    h2{
+    .coming-soon-wrapper{
+        display: flex;
+        gap: 1vw;
+        .coming-soon{
+            margin-top: -0.3vw;
+            display: flex;
+            padding: 4px 6px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 4px;
+            background: rgba(179, 179, 179, 0.10);
+            color: white;
+            font-family: Source Code Pro;
+        }
+    }
+    h3{
         font-weight: 700;
     }
-    p{
-        color: white;
+    .card-description{
+        color: #C8C8C8;
+        font-family: Source Code Pro;
+        font-size: 0.95vw;
     }
     .tags{
         display: flex;

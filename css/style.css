@@ -865,11 +865,37 @@ p {
   width: 100%;
   height: auto;
 }
-.project-card h2 {
+.project-card .coming-soon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1vw;
+}
+.project-card .coming-soon-wrapper .coming-soon {
+  margin-top: -0.3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: rgba(179, 179, 179, 0.1);
+  color: white;
+  font-family: Source Code Pro;
+}
+.project-card h3 {
   font-weight: 700;
 }
-.project-card p {
-  color: white;
+.project-card .card-description {
+  color: #C8C8C8;
+  font-family: Source Code Pro;
+  font-size: 0.95vw;
 }
 .project-card .tags {
   display: -webkit-box;
@@ -1920,18 +1946,24 @@ body #particles-js {
   gap: 3vw;
 }
 .hero-banner .hero-items-left .intro-pill {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end;
+          align-items: end;
   gap: 1.2vw;
+}
+.hero-banner .hero-items-left .intro-pill a {
+  margin-bottom: -0.1vw;
 }
 .hero-banner .hero-items-left .intro-pill .location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 0.4vw 0.6vw 0.4vw 0.3vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2505,6 +2537,8 @@ main .about-items-right .experience {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
