@@ -798,13 +798,13 @@ p {
     padding-left: 0vw !important;
   }
   .chips-wrapper .chips-container {
-    white-space: nowrap; /* Prevent chips from wrapping to the next line */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
     scrollbar-width: none; /* Hide the scrollbar on Firefox */
     -ms-overflow-style: none; /* Hide the scrollbar on IE/Edge */
     overflow-x: auto; /* Enable horizontal scrolling */
     padding-left: 8vw;
     padding-right: 13vw;
+    padding-bottom: 8vw;
   }
   .chips-wrapper .chips-container::-webkit-scrollbar {
     width: 0px; /* Hide the scrollbar on Webkit browsers */
@@ -812,7 +812,7 @@ p {
   .chips-wrapper .chips-container .chip {
     margin-right: 10px; /* Add some spacing between chips */
     border: 0.4vw solid #fff; /* White stroke */
-    border-radius: 4vw;
+    border-radius: 2vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
