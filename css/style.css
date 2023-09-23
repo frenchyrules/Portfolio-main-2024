@@ -793,6 +793,41 @@ p {
     border: none;
     border-radius: 1vw;
   }
+  .chips-wrapper {
+    width: 100vw; /* Adjust this width as needed */
+    padding-left: 0vw !important;
+  }
+  .chips-wrapper .chips-container {
+    white-space: nowrap; /* Prevent chips from wrapping to the next line */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide the scrollbar on Firefox */
+    -ms-overflow-style: none; /* Hide the scrollbar on IE/Edge */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-left: 8vw;
+    padding-right: 13vw;
+  }
+  .chips-wrapper .chips-container::-webkit-scrollbar {
+    width: 0px; /* Hide the scrollbar on Webkit browsers */
+  }
+  .chips-wrapper .chips-container .chip {
+    margin-right: 10px; /* Add some spacing between chips */
+    border: 0.4vw solid #fff; /* White stroke */
+    border-radius: 4vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 1vw; /* Add some margin between chips */
+    font-size: 4vw;
+  }
+  .chips-wrapper .chips-container .chip.selected .chip-label {
+    margin-left: 1vw; /* Add 8px spacing between the check and text */
+  }
+  .chips-wrapper .chips-container .chip .check-icon {
+    margin-left: -2vw;
+    height: 4vw;
+    display: none; /* Initially, hide the checkmark icon */
+    fill: #fff; /* White checkmark for unselected chips */
+  }
 }
 .skill-card {
   display: -webkit-box;
@@ -1148,7 +1183,10 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 57.5vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 57.5vw !important;
     height: 90vw;
     padding: 3vw;
     border-radius: 1vw;
@@ -1157,6 +1195,13 @@ p {
             box-shadow: 0vw 0vw 0vw 0vw rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.09), 0px 8px 5px 0px rgba(0, 0, 0, 0.05), 0px 14px 6px 0px rgba(0, 0, 0, 0.01), 0px 22px 6px 0px rgba(0, 0, 0, 0);
     -webkit-backdrop-filter: blur(0.7vw);
             backdrop-filter: blur(0.7vw);
+  }
+  .project-card .coming-soon-wrapper {
+    gap: 4vw;
+  }
+  .project-card .coming-soon-wrapper .coming-soon {
+    font-size: 4vw;
+    margin-top: -1.5vw !important;
   }
   .project-card .project-description {
     font-family: Source Code Pro;
@@ -1252,10 +1297,10 @@ p {
             backdrop-filter: blur(0.6vw);
   }
   .hero-banner-card p {
-    font-size: 2vw !important;
+    font-size: 3vw !important;
   }
   .hero-banner-card .xp {
-    font-size: 2vw !important;
+    font-size: 3vw !important;
     font-weight: 600;
     color: #5EB791 !important;
   }
@@ -2492,6 +2537,10 @@ main .about-items-right .experience {
   padding: 10vw 10vw 2vw 10vw;
 }
 
+.chips-wrapper {
+  padding-left: 9.5vw;
+}
+
 .projects-section-main {
   position: relative;
   height: auto;
@@ -2739,6 +2788,7 @@ main .about-items-right .experience {
   .projects-section-mobile .section-intro p {
     font-size: 1vw;
     color: white;
+    margin-top: -1vw;
   }
   .projects-section-mobile .section-intro div {
     display: -webkit-box;
@@ -2747,10 +2797,13 @@ main .about-items-right .experience {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .projects-section-mobile .section-intro div svg {
     fill: white;
-    height: 4vw !important;
+    height: 8vw !important;
   }
   .projects-section-mobile .section-intro button {
     position: relative;
@@ -2796,7 +2849,7 @@ main .about-items-right .experience {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 10vw;
+    gap: 6vw;
     margin-top: 15vw;
     margin-bottom: 15vw;
   }
@@ -2844,10 +2897,12 @@ main .about-items-right .experience {
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 0vw 5vw 0vw 5vw !important;
+    margin-bottom: 4vw;
   }
   .methodology-section-mobile .section-intro p {
     font-size: 1vw;
     color: white;
+    margin-top: -1.5vw;
   }
   .methodology-section-mobile .section-intro div {
     display: -webkit-box;
@@ -2859,6 +2914,7 @@ main .about-items-right .experience {
   }
   .methodology-section-mobile .section-intro div svg {
     fill: white;
+    height: 8vw !important;
   }
   .methodology-section-mobile .section-intro button {
     position: relative;
@@ -2892,5 +2948,11 @@ main .about-items-right .experience {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .projects-section-main {
+    display: none;
+  }
+  .spacer {
+    margin-bottom: 20vw;
   }
 }

@@ -306,6 +306,45 @@
         border: none;
         border-radius: 1vw;
     }
+    .chips-wrapper{
+        width: 100vw; /* Adjust this width as needed */
+        padding-left: 0vw!important;
+        .chips-container{
+            white-space: nowrap; /* Prevent chips from wrapping to the next line */
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+            scrollbar-width: none; /* Hide the scrollbar on Firefox */
+            -ms-overflow-style: none; /* Hide the scrollbar on IE/Edge */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            padding-left: 8vw;
+            padding-right: 13vw;
+
+            &::-webkit-scrollbar {
+              width: 0px; /* Hide the scrollbar on Webkit browsers */
+            }
+            .chip {
+                margin-right: 10px; /* Add some spacing between chips */
+                border: 0.4vw solid #fff; /* White stroke */
+                border-radius: 4vw;
+                height: fit-content;
+                margin: 1vw; /* Add some margin between chips */
+                font-size: 4vw;
+        
+            &.selected {
+                 .chip-label {
+                    margin-left: 1vw; /* Add 8px spacing between the check and text */
+                }
+            }
+    
+            .check-icon {
+                margin-left: -2vw;
+                height: 4vw;
+                display: none; /* Initially, hide the checkmark icon */
+                fill: #fff; /* White checkmark for unselected chips */
+            }
+        }
+        }
+    }
+
 }
   
   
