@@ -270,4 +270,55 @@ header{
 .spacer{
     margin-bottom: 20vw;
 }
+.about-main{
+    flex-direction: column;
+    padding: 0vw 5vw 0vw 5vw!important;
+    gap: 4vw;
+    .about-items-left{
+        gap: 4vw;
+        .bio{
+            padding: 4vw;
+            flex-direction: column;
+            width: 100%;
+            gap: 8vw;
+            .bio-img{
+                height: 40vw!important;
+            }
+        }
+        .education{
+            width: 100%;
+            padding: 4vw;
+            gap: 4vw;
+        }
+        .experience-years{
+            width: 100%;
+            padding: 4vw;
+            gap: 4vw;
+            .experience-token{
+                gap: 2vw;
+                align-items: flex-start!important;
+                .experience-token-title{
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .about-items-right{
+        gap: 4vw;
+        .skills{
+            width: 100%;
+            padding: 4vw;
+            gap: 4vw;
+            h3{
+                width: 100%;
+            }
+        }
+        .experience{
+            width: 100%;
+            height: fit-content;
+            padding: 4vw;
+            gap: 4vw;
+        }
+    }
+}
 }

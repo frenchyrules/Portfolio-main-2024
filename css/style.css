@@ -1471,7 +1471,7 @@ footer section a:hover {
             align-items: center;
     max-width: 100vw;
     padding: 5.3vw 11.7vw 5.3vw 11.7vw;
-    gap: 4vw;
+    gap: 8vw;
     /* Snackbar Styles */
   }
   footer .label {
@@ -1564,7 +1564,7 @@ footer section a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 4vw;
+    gap: 8vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2516,9 +2516,9 @@ main .about-items-right .experience {
   width: 40vw;
   height: 29.5vw;
   padding: 1.5vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -2954,5 +2954,66 @@ main .about-items-right .experience {
   }
   .spacer {
     margin-bottom: 20vw;
+  }
+  .about-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0vw 5vw 0vw 5vw !important;
+    gap: 4vw;
+  }
+  .about-main .about-items-left {
+    gap: 4vw;
+  }
+  .about-main .about-items-left .bio {
+    padding: 4vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    gap: 8vw;
+  }
+  .about-main .about-items-left .bio .bio-img {
+    height: 40vw !important;
+  }
+  .about-main .about-items-left .education {
+    width: 100%;
+    padding: 4vw;
+    gap: 4vw;
+  }
+  .about-main .about-items-left .experience-years {
+    width: 100%;
+    padding: 4vw;
+    gap: 4vw;
+  }
+  .about-main .about-items-left .experience-years .experience-token {
+    gap: 2vw;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .about-main .about-items-left .experience-years .experience-token .experience-token-title {
+    width: 90%;
+  }
+  .about-main .about-items-right {
+    gap: 4vw;
+  }
+  .about-main .about-items-right .skills {
+    width: 100%;
+    padding: 4vw;
+    gap: 4vw;
+  }
+  .about-main .about-items-right .skills h3 {
+    width: 100%;
+  }
+  .about-main .about-items-right .experience {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 4vw;
+    gap: 4vw;
   }
 }
