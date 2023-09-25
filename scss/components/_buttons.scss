@@ -238,6 +238,7 @@
       }    
 }
 .chip {
+    z-index: 100!important;
     display: inline-flex;
     align-items: center;
     background-color: transparent; /* Transparent background */

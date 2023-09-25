@@ -728,6 +728,7 @@ p {
 }
 
 .chip {
+  z-index: 100 !important;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1614,7 +1615,7 @@ footer section a:hover {
 }
 header {
   margin-top: 3vw;
-  z-index: 100;
+  z-index: 1;
   position: fixed;
   width: 100%;
   display: -webkit-box;
