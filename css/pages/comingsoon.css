@@ -1,0 +1,33 @@
+main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 80vw;
+  background: red;
+}
+main .page-title {
+  text-align: center;
+  margin-top: -40vw;
+}
+main .primary-button {
+  margin-top: 2vw;
+}
+main .primary-button svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-right: 1vw;
+}
+main img {
+  position: absolute;
+  top: 0%;
+  overflow: hidden;
+}

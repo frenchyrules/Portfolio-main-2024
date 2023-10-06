@@ -1907,29 +1907,54 @@ main .about-items-right .experience {
   width: 18vw;
 }
 
-main {
+.soon {
+  background-image: url(/assets/images/comingsoonbg.png), linear-gradient(105.14deg, #000000 21.49%, #5D2BAB 169.37%);
+  background-position: center;
+  background-size: 70%, contain;
+  background-repeat: no-repeat;
+  background-attachment: local, scroll;
+  position: relative;
+}
+
+.commingsoon-main {
+  padding: 9.5vw !important;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100vw;
-  height: 80vw;
 }
-main .page-title {
+.commingsoon-main .page-title {
+  padding: 1vw;
+  position: fixed;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-top: -40vw;
+  border-radius: 0.4vw;
+  background: rgba(166, 157, 157, 0.082);
+  backdrop-filter: blur(4.5px);
 }
-main .primary-button {
+.commingsoon-main .primary-button {
   margin-top: 2vw;
 }
-main .primary-button svg {
+.commingsoon-main .primary-button svg {
   transform: rotate(180deg);
   margin-right: 1vw;
 }
-main img {
+
+.soon-footer {
   position: absolute;
-  top: 0%;
-  overflow: hidden;
+  bottom: 0%;
+  width: 100vw;
+}
+.soon-footer section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -2242,12 +2267,18 @@ main img {
     padding: 4vw;
     gap: 4vw;
   }
-  .commingsoon-main {
-    margin-top: 10vw;
-    padding: 10vw 10vw 0vw 10vw !important;
-    gap: 4vw;
+  .soon {
+    background-size: 200%, contain;
   }
-  .commingsoon-main img {
-    display: none;
+  .commingsoon-main {
+    width: 100%;
+  }
+  .commingsoon-main .page-title {
+    top: 25%;
+    width: 80%;
+    padding: 4vw;
+    gap: 2vw;
+    text-align: center !important;
+    border-radius: 1.4vw !important;
   }
 }
