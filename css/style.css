@@ -640,6 +640,38 @@ p {
   fill: #fff; /* White checkmark for unselected chips */
 }
 
+.message-box {
+  z-index: 2;
+  position: absolute;
+  visibility: hidden;
+  width: fit-content;
+  color: white;
+  padding: 0.5vw;
+  border-radius: 0px 4px 4px 4px;
+  border: 1px solid #4E4C4C;
+  background: #453E41;
+}
+
+.reveal {
+  position: absolute;
+  padding: 0vw 0.7vw;
+  border-radius: 224px;
+  background: rgba(166, 157, 157, 0.3);
+  box-shadow: 0px 4px 20px 0px #000;
+  backdrop-filter: blur(4.5px);
+  font-size: 1.5vw;
+  color: white;
+  transition: 0.2s;
+}
+.reveal:hover {
+  cursor: pointer;
+  background: #5A3FFF;
+  transition: 0.2s;
+}
+.reveal:hover + .message-box {
+  visibility: visible;
+}
+
 @media (max-width: 768px) {
   .primary-button {
     width: 100%;
@@ -742,6 +774,7 @@ p {
 }
 .project-card .coming-soon-wrapper {
   display: flex;
+  justify-content: center;
   gap: 1vw;
 }
 .project-card .coming-soon-wrapper .coming-soon {
@@ -755,6 +788,7 @@ p {
   background: rgba(179, 179, 179, 0.1);
   color: white;
   font-family: Source Code Pro;
+  font-size: 0.9vw !important;
 }
 .project-card h3 {
   font-weight: 700;
@@ -931,8 +965,8 @@ p {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 57.5vw !important;
-    height: 90vw;
+    width: 60vw !important;
+    height: 105vw;
     padding: 3vw;
     border-radius: 1vw;
     border: 0.07vw solid #2A2240;
@@ -940,15 +974,18 @@ p {
     backdrop-filter: blur(0.7vw);
   }
   .project-card .coming-soon-wrapper {
-    gap: 4vw;
+    gap: 2vw;
+    flex-direction: column;
   }
   .project-card .coming-soon-wrapper .coming-soon {
-    font-size: 4vw;
+    width: fit-content;
+    font-size: 3vw !important;
     margin-top: -1.5vw !important;
   }
   .project-card .project-description {
     font-family: Source Code Pro;
     color: #C8C8C8;
+    font-size: 4vw !important;
   }
   .project-card .tags {
     gap: 2vw;
@@ -959,13 +996,13 @@ p {
     gap: 1vw;
   }
   .project-card .tags .tags-row .tag-regular:nth-child(1) {
-    padding: 0.2vw 0.5vw;
+    padding: 0.8vw 0.8vw;
     gap: 2vw;
     border-radius: 0.8vw;
     background: rgba(94, 183, 145, 0.1);
   }
   .project-card .tags .tags-row .tag-regular:nth-child(2) {
-    padding: 0.2vw 0.5vw;
+    padding: 0.8vw 0.8vw;
     gap: 2vw;
     border-radius: 0.8vw;
   }
@@ -975,7 +1012,7 @@ p {
     gap: 2vw;
   }
   .project-card .tags .tags-row2 .tag-regular:nth-child(1) {
-    padding: 0.2vw 0.5vw;
+    padding: 0.8vw 0.8vw;
     gap: 2vw;
     border-radius: 0.8vw;
   }
@@ -983,12 +1020,12 @@ p {
     gap: 2vw;
   }
   .project-card .tags .tags-row3 .tag-regular:nth-child(1) {
-    padding: 0.2vw 0.5vw;
+    padding: 0.8vw 0.8vw;
     gap: 2vw;
     border-radius: 0.8vw;
   }
   .project-card .tags .tags-row3 .tag-regular:nth-child(2) {
-    padding: 0.2vw 0.5vw;
+    padding: 0.8vw 0.8vw;
     gap: 2vw;
     border-radius: 0.8vw;
   }
@@ -1526,6 +1563,9 @@ body #particles-js {
   border-radius: 4px;
   background: rgba(166, 157, 157, 0.2);
 }
+.hero-banner .hero-items-left .intro-pill .socials {
+  display: flex;
+}
 .hero-banner .hero-items-left svg {
   height: 1.8vw;
   fill: white;
@@ -1907,56 +1947,6 @@ main .about-items-right .experience {
   width: 18vw;
 }
 
-.soon {
-  background-image: url(/assets/images/comingsoonbg.png), linear-gradient(105.14deg, #000000 21.49%, #5D2BAB 169.37%);
-  background-position: center;
-  background-size: 70%, contain;
-  background-repeat: no-repeat;
-  background-attachment: local, scroll;
-  position: relative;
-}
-
-.commingsoon-main {
-  padding: 9.5vw !important;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-}
-.commingsoon-main .page-title {
-  padding: 1vw;
-  position: fixed;
-  top: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border-radius: 0.4vw;
-  background: rgba(166, 157, 157, 0.082);
-  backdrop-filter: blur(4.5px);
-}
-.commingsoon-main .primary-button {
-  margin-top: 2vw;
-}
-.commingsoon-main .primary-button svg {
-  transform: rotate(180deg);
-  margin-right: 1vw;
-}
-
-.soon-footer {
-  position: absolute;
-  bottom: 0%;
-  width: 100vw;
-}
-.soon-footer section {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 @media (max-width: 768px) {
   header {
     display: none;
@@ -2281,4 +2271,181 @@ main .about-items-right .experience {
     text-align: center !important;
     border-radius: 1.4vw !important;
   }
+}
+.soon {
+  background-image: url(/assets/images/comingsoonbg.png), linear-gradient(105.14deg, #000000 21.49%, #5D2BAB 169.37%);
+  background-position: center;
+  background-size: 70%, contain;
+  background-repeat: no-repeat;
+  background-attachment: local, scroll;
+  position: relative;
+}
+
+.commingsoon-main {
+  padding: 9.5vw !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.commingsoon-main .page-title {
+  padding: 1vw;
+  position: fixed;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.4vw;
+  background: rgba(166, 157, 157, 0.082);
+  backdrop-filter: blur(4.5px);
+}
+.commingsoon-main .primary-button {
+  margin-top: 2vw;
+}
+.commingsoon-main .primary-button svg {
+  transform: rotate(180deg);
+  margin-right: 1vw;
+}
+
+.soon-footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100vw;
+}
+.soon-footer section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.maws-hero {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 10vw 9.5vw 4vw 9.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.maws-hero .tags {
+  display: flex;
+  width: 100%;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+}
+.maws-hero .tags .tag-regular:nth-child(1) {
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(94, 183, 145, 0.1);
+  color: #5EB791;
+}
+.maws-hero .tags .tag-regular:nth-child(2) {
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(187, 60, 247, 0.1);
+  color: #BB3CF7;
+}
+.maws-hero .tags .tag-regular:nth-child(3) {
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(255, 204, 106, 0.1);
+  color: #FFCC6A;
+}
+.maws-hero .tags .tag-regular:nth-child(4) {
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(247, 60, 172, 0.1);
+  color: #F73CAC;
+}
+.maws-hero .tags .hide-tag {
+  opacity: 0;
+}
+.maws-hero .primary-button {
+  z-index: 0;
+  gap: 1vw;
+}
+.maws-hero .project-banner-container {
+  position: relative;
+  padding: 2vw;
+  background: rgba(166, 157, 157, 0.3);
+  backdrop-filter: blur(4.5px);
+  border-radius: 1vw;
+}
+.maws-hero .project-banner-container img {
+  box-shadow: 0px 14px 50px 7px rgba(0, 0, 0, 0.29);
+  border-radius: 1vw;
+}
+.maws-hero .project-banner-container .maws-reveal-1 {
+  top: 43%;
+  left: 23%;
+}
+.maws-hero .project-banner-container .maws-message-box-1 {
+  top: 48%;
+  left: 26%;
+}
+.maws-hero .project-banner-container .maws-reveal-2 {
+  top: 13%;
+  left: 33%;
+}
+.maws-hero .project-banner-container .maws-message-box-2 {
+  top: 18%;
+  left: 36%;
+}
+.maws-hero .project-banner-container .maws-reveal-3 {
+  top: 53%;
+  left: 73%;
+}
+.maws-hero .project-banner-container .maws-message-box-3 {
+  top: 58%;
+  left: 76%;
+}
+
+.project-intro {
+  padding: 0vw 9.5vw 4vw 9.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.project-intro .project-intro-triple {
+  padding: 0vw 10vw 0vw 10vw !important;
+  margin-top: 4vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-content-section {
+  padding: 0vw 9.5vw 4vw 9.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.project-content-section .prototype-container {
+  padding: 2vw;
+  background: rgba(166, 157, 157, 0.3);
+  backdrop-filter: blur(4.5px);
+  border-radius: 1vw;
 }

@@ -1,0 +1,338 @@
+// MOBILE
+@media (max-width: 768px){
+header{
+    display: none;
+}
+.hero-banner{
+    height: 200vw;
+    width: 100%;
+    margin-top: 15vw;
+    margin-bottom: 45vw;
+    flex-direction: column!important;
+    padding: 0vw 5vw 0vw 5vw!important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .menu-bg{
+        position: absolute;
+        top: -10%;
+        left: 0%;
+        width: 10em;
+        height: 20em;
+        flex-shrink: 0;
+        background-color: #9D5088;
+        filter: blur(222px);
+        z-index: -1;
+    }
+    .hero-items-left{
+        width: fit-content;
+        .intro-pill{
+            display: inline-flex;
+            align-items: flex-end;
+            gap: 1.2vw;
+            .location{
+                display: flex;
+                padding: 1vw 2vw 1vw 1vw;
+                justify-content: center;
+                align-items: center;
+                gap: 4px;
+                border-radius: 4px;
+                background: rgba(166, 157, 157, 0.20);
+            }
+            svg{
+                height: 5vw;
+            }
+        }
+        .text-button{
+            display: none;
+        }
+        .primary-button{
+            margin-top: 8vw!important;
+        }
+        .secondary-button{
+            display: flex;
+        }
+    }
+    .hero-items-right {
+        position: relative;
+        width: 150%;
+        height: 100%;
+        img{
+            position: absolute;
+            right: -30vw!important;
+        }
+        .bg-circle{
+            display: none;
+            position: absolute;
+            top: -20%;
+            z-index: -1;
+        }
+        .hero-banner-card{
+            position: absolute;
+            top: 60%;
+            left: 25%;
+            z-index: -1;
+        }
+        .hero-banner-card:nth-child(1){
+            top: 120%;
+            left: 45%;
+            z-index: -1;
+
+        }
+        .hero-banner-card:nth-child(2){
+            top: 15%;
+            left: 50%;
+            z-index: 1;
+        }
+        .hero-banner-card:nth-child(3){
+            top: 75%;
+            left: 60%;
+            z-index: 1;
+        }
+    }
+}
+.projects-section{
+    display: none;
+    .text-button{
+        display: none;
+    }
+}
+.projects-section-mobile{
+    display: flex!important;
+    flex-direction: column;
+    gap: 10vw;
+
+    .button-wrapper{
+        padding: 0vw 8vw 0vw 8vw!important;
+    }
+
+    .project-card-row-wrapper{
+        height: fit-content;
+        width: 100%;
+        padding: 0vw 5vw 0vw 5vw!important;
+        position: relative; /* Add relative positioning for the pseudo-element */
+        overflow-x: auto;  /* Enable horizontal scrolling */
+
+        /* Hide the scrollbar without impacting horizontal scroll */
+        &::-webkit-scrollbar {
+          width: 0;
+          background: transparent;
+        }
+      
+        &::-webkit-scrollbar-thumb {
+          background: transparent;
+        }
+        &::before {
+            content: ''; /* Create a pseudo-element for the right padding */
+            width: 24px; /* Set the desired right padding */
+            flex: 0 0 auto;
+          }
+    }
+    .section-intro{
+        gap: 4vw!important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0vw 5vw 0vw 5vw!important;
+
+        p{
+            font-size: 1vw;
+            color: white;
+            margin-top: -1vw;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            height: fit-content;
+            svg{
+                fill: white;
+                height: 8vw!important;
+            }
+        }
+        button{
+            position: relative;
+            animation: verticalMovement 1s infinite alternate ease-in-out;
+            // margin-top: 0vw;
+            svg{
+                margin-left: 0.5vw;
+            }
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+        span{
+            margin: 0vw 0.2vw 0.2vw 0vw;
+            color: $primaryColor;
+            font-size: 2vw;
+        }
+    }
+    .project-card-row{
+        display: inline-flex; /* Display cards in a row */
+        gap: 6vw; /* Space between cards */
+        transition: transform 0.3s ease; /* Smooth transition when scrolling */
+        a{
+            text-decoration: none;
+            width: fit-content;
+        }
+    }
+}
+.methodology-section{
+    display: none;
+}
+.methodology-section-mobile{
+    display: flex!important;
+    flex-direction: column;
+    gap: 6vw;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+
+    .methodology-card-row-wrapper{
+        height: fit-content;
+        width: 100%;
+        padding: 0vw 5vw 0vw 5vw!important;
+        position: relative; /* Add relative positioning for the pseudo-element */
+        overflow-x: auto;  /* Enable horizontal scrolling */
+
+        /* Hide the scrollbar without impacting horizontal scroll */
+        &::-webkit-scrollbar {
+          width: 0;
+          background: transparent;
+        }
+      
+        &::-webkit-scrollbar-thumb {
+          background: transparent;
+        }
+        &::before {
+            content: ''; /* Create a pseudo-element for the right padding */
+            width: 24px; /* Set the desired right padding */
+            flex: 0 0 auto;
+          }
+          &:nth-child(3){
+            margin-top: -5vw;
+          }
+          &:nth-child(4){
+            margin-top: -5vw;
+          }
+    }
+    .section-intro{
+        gap: 4vw!important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0vw 5vw 0vw 5vw!important;
+        margin-bottom: 4vw;
+
+        p{
+            font-size: 1vw;
+            color: white;
+            margin-top: -1.5vw;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            svg{
+                fill: white;
+                height: 8vw!important;
+            }
+        }
+        button{
+            position: relative;
+            animation: verticalMovement 1s infinite alternate ease-in-out;
+            // margin-top: 0vw;
+            svg{
+                margin-left: 0.5vw;
+            }
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+        span{
+            margin: 0vw 0.2vw 0.2vw 0vw;
+            color: $primaryColor;
+            font-size: 2vw;
+        }
+    }
+    .methodology-card-row{
+        display: inline-flex; /* Display cards in a row */
+        gap: 6vw; /* Space between cards */
+        transition: transform 0.3s ease; /* Smooth transition when scrolling */
+        a{
+            text-decoration: none;
+            width: fit-content;
+        }
+    }
+}
+.projects-section-main{
+    display: none;
+}
+.spacer{
+    margin-bottom: 20vw;
+}
+.about-main{
+    flex-direction: column;
+    padding: 0vw 5vw 0vw 5vw!important;
+    gap: 4vw;
+    .about-items-left{
+        gap: 4vw;
+        .bio{
+            padding: 4vw;
+            flex-direction: column;
+            width: 100%;
+            gap: 8vw;
+            .bio-img{
+                height: 40vw!important;
+            }
+        }
+        .education{
+            width: 100%;
+            padding: 4vw;
+            gap: 4vw;
+        }
+        .experience-years{
+            width: 100%;
+            padding: 4vw;
+            gap: 4vw;
+            .experience-token{
+                gap: 2vw;
+                align-items: flex-start!important;
+                .experience-token-title{
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .about-items-right{
+        gap: 4vw;
+        .skills{
+            width: 100%;
+            padding: 4vw;
+            gap: 4vw;
+            h3{
+                width: 100%;
+            }
+        }
+        .experience{
+            width: 100%;
+            height: fit-content;
+            padding: 4vw;
+            gap: 4vw;
+        }
+    }
+}
+.soon{
+    background-size: 200%, contain;
+}
+.commingsoon-main{
+width: 100%;
+.page-title{
+    top: 25%;
+    width: 80%;
+    padding: 4vw;
+    gap: 2vw;
+    text-align: center!important;
+    border-radius: 1.4vw!important;
+    }
+}
+}

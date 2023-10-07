@@ -13,12 +13,12 @@
 @import './navigation/header';
 
 // PAGES
-@import './pages/home';
-@import './pages/about';
-@import './pages/projects';
-@import './pages/soon';
-@import './pages/responsive';
- 
+@import './pages/main/home';
+@import './pages/main/about';
+@import './pages/main/projects';
+@import './pages/main/responsive';
+@import './pages/projects/soon';
+@import './pages/projects/maws';
 
 // DUPLICATE PROPERTIES FUNCTION
 // ex: @extend .btn
