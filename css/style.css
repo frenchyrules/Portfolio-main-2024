@@ -672,6 +672,26 @@ p {
   visibility: visible;
 }
 
+.github-button {
+  margin-top: 1vw;
+  display: flex;
+  gap: 0.5vw;
+  width: fit-content;
+  padding: 1vw;
+  border: solid 1px white;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 0.5vw;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.github-button svg {
+  width: 1.5vw;
+}
+.github-button:hover {
+  background: rgba(255, 255, 255, 0.242);
+  transition: 0.2s;
+}
+
 @media (max-width: 768px) {
   .primary-button {
     width: 100%;
@@ -2429,6 +2449,35 @@ main .about-items-right .experience {
   display: flex;
   flex-direction: column;
   gap: 1vw;
+  position: relative;
+}
+.project-intro a {
+  color: #5A3FFF;
+}
+.project-intro a:hover + .maws-youtube {
+  visibility: visible;
+}
+.project-intro .maws-youtube {
+  top: -5%;
+  left: 50%;
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+  flex-direction: row;
+  background: rgba(166, 157, 157, 0.3);
+  backdrop-filter: blur(4.5px);
+  border-radius: 1vw;
+  width: fit-content;
+  padding: 0.5vw;
+}
+.project-intro .maws-youtube svg {
+  height: 1.5vw;
+}
+.project-intro .maws-youtube svg:nth-child(1) {
+  height: 2vw;
 }
 .project-intro .project-intro-triple {
   padding: 0vw 10vw 0vw 10vw !important;
@@ -2443,9 +2492,39 @@ main .about-items-right .experience {
   flex-direction: column;
   gap: 1vw;
 }
-.project-content-section .prototype-container {
-  padding: 2vw;
+.project-content-section iframe {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  width: 100%;
+  height: 40vw;
+  border-radius: 0.5vw;
+}
+.project-content-section .double-row {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+.project-content-section .double-row img {
+  width: 50%;
+}
+.project-content-section .double-row .code-structure {
   background: rgba(166, 157, 157, 0.3);
   backdrop-filter: blur(4.5px);
   border-radius: 1vw;
+  padding: 1vw;
+}
+.project-content-section .alignement-fix {
+  align-items: flex-start !important;
+  padding-top: 1vw;
+}
+.project-content-section .code-embed {
+  background: rgba(166, 157, 157, 0.3);
+  backdrop-filter: blur(4.5px);
+  border-radius: 1vw;
+  padding: 1vw;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1vw;
 }

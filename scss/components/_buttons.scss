@@ -316,6 +316,25 @@
           }
     }
 }
+.github-button{
+    margin-top: 1vw;
+    display: flex;
+    gap: 0.5vw;
+    width: fit-content;
+    svg{
+        width: 1.5vw;
+    }
+    padding: 1vw;
+    border: solid 1px white;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 0.5vw;
+    text-decoration: none;
+    transition: 0.2s;
+    &:hover{
+        background: rgba(255, 255, 255, 0.242);
+        transition: 0.2s;
+    }
+}
 
 // RESPONSIVE
 @media (max-width: 768px){
