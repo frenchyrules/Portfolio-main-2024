@@ -50,19 +50,21 @@
     width: fit-content;
     height: fit-content;
 
-    text-decoration: none;
-
     border: 0.07vw solid $white;
     border-radius: 0.3vw;
-    transition: 0.5s;
-    p{
-        width: max-content;
-        font-size: 0.8vw;
-        color: $primaryColor!important;
+    transition: 0.2s;
+    text-decoration: none!important;
+    
+    a{
+        p{
+            width: max-content;
+            font-size: 0.8vw;
+            color: $white!important;
+        }
     }
     &:hover{
-        background: darken($white, 90%);
-        transition: 0.5s;
+        background: rgba(255, 255, 255, 0.245);
+        transition: 0.2s;
         transform: translatey(3px);
     }
 }
@@ -335,12 +337,29 @@
         transition: 0.2s;
     }
 }
+.project-buttons-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+    padding: 2vw 9.5vw 4vw 9.5vw;
+    .flip-arrow{
+        transform: rotate(180deg);
+    }
+    .secondary-button{
+        display: flex;
+        gap: 1vw;
+        align-items: center;
+        svg{
+            fill: white;
+        }
+    }
+}
 
 // RESPONSIVE
 @media (max-width: 768px){
     .primary-button{
         width: 100%;
-        padding: 3vw 3vw;
+        padding: 3vw;
         gap: 2vw;
         border-radius: 1vw;
 
@@ -394,7 +413,17 @@
         }
         }
     }
+    .github-button{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 4vw;
+                border-radius: 1vw;
 
+        svg{
+            width: 5vw!important;
+        }
+    }
 }
   
   

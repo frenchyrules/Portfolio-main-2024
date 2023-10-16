@@ -414,19 +414,19 @@ p {
   gap: 0.6vw;
   width: fit-content;
   height: fit-content;
-  text-decoration: none;
   border: 0.07vw solid #ffffff;
   border-radius: 0.3vw;
-  transition: 0.5s;
+  transition: 0.2s;
+  text-decoration: none !important;
 }
-.secondary-button p {
+.secondary-button a p {
   width: max-content;
   font-size: 0.8vw;
-  color: #5A3FFF !important;
+  color: #ffffff !important;
 }
 .secondary-button:hover {
-  background: #1a1a1a;
-  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.245);
+  transition: 0.2s;
   transform: translatey(3px);
 }
 
@@ -692,10 +692,28 @@ p {
   transition: 0.2s;
 }
 
+.project-buttons-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2vw 9.5vw 4vw 9.5vw;
+}
+.project-buttons-footer .flip-arrow {
+  transform: rotate(180deg);
+}
+.project-buttons-footer .secondary-button {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+.project-buttons-footer .secondary-button svg {
+  fill: white;
+}
+
 @media (max-width: 768px) {
   .primary-button {
     width: 100%;
-    padding: 3vw 3vw;
+    padding: 3vw;
     gap: 2vw;
     border-radius: 1vw;
   }
@@ -741,6 +759,16 @@ p {
     height: 4vw;
     display: none; /* Initially, hide the checkmark icon */
     fill: #fff; /* White checkmark for unselected chips */
+  }
+  .github-button {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw;
+    border-radius: 1vw;
+  }
+  .github-button svg {
+    width: 5vw !important;
   }
 }
 .skill-card {
@@ -2291,6 +2319,56 @@ main .about-items-right .experience {
     text-align: center !important;
     border-radius: 1.4vw !important;
   }
+  .double-row {
+    flex-direction: column !important;
+  }
+  .double-row .code-embed {
+    width: 100% !important;
+  }
+  .maws-hero .primary-button {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  .project-intro {
+    margin-top: 5vw;
+  }
+  .project-intro h2 {
+    line-height: 8vw;
+  }
+  .project-intro .project-intro-triple {
+    padding: 5vw 0vw 5vw 0vw !important;
+    flex-direction: column;
+    gap: 5vw;
+    justify-content: flex-start !important;
+  }
+  .project-content-section {
+    margin-top: 5vw;
+  }
+  .project-content-section h2 {
+    margin-bottom: 5vw !important;
+  }
+  .project-content-section h3 {
+    margin-bottom: 3vw !important;
+    margin-top: 3vw !important;
+  }
+  .project-content-section iframe {
+    height: 180vw !important;
+    margin-top: 10vw !important;
+    margin-bottom: 10vw !important;
+  }
+  .project-content-section .code-embed {
+    padding: 5vw !important;
+    width: 100% !important;
+  }
+  .project-content-section .github-button {
+    margin-bottom: 5vw;
+  }
+  .project-content-section .code-structure {
+    width: 100% !important;
+  }
+  .project-content-section .double-row img {
+    width: 100% !important;
+  }
 }
 .soon {
   background-image: url(/assets/images/comingsoonbg.png), linear-gradient(105.14deg, #000000 21.49%, #5D2BAB 169.37%);
@@ -2480,7 +2558,7 @@ main .about-items-right .experience {
   height: 2vw;
 }
 .project-intro .project-intro-triple {
-  padding: 0vw 10vw 0vw 10vw !important;
+  padding: 0vw 10vw 0vw 10vw;
   margin-top: 4vw;
   display: flex;
   justify-content: space-between;
@@ -2501,6 +2579,7 @@ main .about-items-right .experience {
 }
 .project-content-section .double-row {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 4vw;
 }
@@ -2527,4 +2606,7 @@ main .about-items-right .experience {
   justify-content: space-between;
   flex-direction: column;
   gap: 1vw;
+}
+.project-content-section .extra-margin {
+  margin-top: 2vw;
 }
