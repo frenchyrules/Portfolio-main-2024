@@ -108,7 +108,7 @@
     gap: 1vw;
     position: relative;
     a{
-        color: #5A3FFF;
+        color: $white;
         &:hover{
             + .maws-youtube{
                 visibility:visible
@@ -142,6 +142,24 @@
         margin-top: 4vw;
         display: flex;
         justify-content: space-between;
+        span{
+            background: rgba(255, 204, 106, 0.10);
+            border-radius: 0.4vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.2vw 0.5vw 0.2vw 0.5vw;
+            gap: 0.5vw;
+            width: fit-content;
+            margin-bottom: 1vw;
+            p{
+                color: #FFCC6A;
+            }
+            svg{
+                height: 1vw;
+                fill: #FFCC6A!important;
+            }
+        }
     }
 }
 .project-content-section{
@@ -169,6 +187,165 @@
             backdrop-filter: blur(4.5px);
             border-radius: 1vw;
             padding: 1vw;
+        }
+        .animated-image{
+            width: auto;
+            border-radius: 50%;
+            height: fit-content;
+            width: fit-content;
+            width: auto;
+            z-index: -10;
+            display: inline-flex;
+            padding: 16px 8px 16px 8px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 4px;
+            border-radius: 8px;
+            background: rgba(198, 198, 198, 0.06);
+            backdrop-filter: blur(3.4919371604919434px);
+            font-family: $white;
+            color: #979797;
+            overflow:hidden;
+            img{
+                width: 100%;
+            }
+            .beat-title{
+                margin-left: 0.5vw!important;
+                font-size: 1.5vw;
+            }
+            .key{
+                color: #515151;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 4px;
+                font-size: 2vw!important;
+                margin-left: 0.5vw;
+                svg{
+                    height: 0.6em;
+                }
+            }
+            ul{
+                margin-left: -1.5vw;
+                margin-top: 1vw;
+                display:flex;
+                width: 100%;
+                ul{
+                    background: rgba(0, 0, 0, 0.8);
+                    // width:200px;
+                    // height:45px;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    padding:0;
+                    margin:0;
+                    transition:ease 0.2s;
+                    position:relative;
+                  }
+                  
+                  li{
+                    list-style:none;
+                    height: 48px;
+                    width: 8px;
+                    border-radius:10px;
+                    background: #236c6481;
+                    margin:0 3px;
+                    padding:0;
+                    animation-name: wave4;
+                    animation-duration: 0.3s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    transition:ease 0.2s;
+                  }
+                  
+                  li:nth-child(2) {
+                      animation-name: wave2;
+                      animation-delay:0.2s;
+                  }
+                  li:nth-child(3) {
+                      animation-name: wave3;
+                    animation-delay:0.23s;
+                    animation-duration: 0.4s;
+                  }
+                  li:nth-child(4) {
+                      animation-name: wave4;
+                      animation-delay:0.1s;
+                    animation-duration: 0.3s;
+                  }
+                  li:nth-child(5) {
+                    animation-delay:0.5s;
+                  }
+                  li:nth-child(6) {
+                      animation-name: wave2;
+                    animation-duration: 0.5s;
+                  }
+                  li:nth-child(8) {
+                      animation-name: wave4;
+                    animation-delay:0.4s;
+                    animation-duration: 0.25s;
+                  }
+                  li:nth-child(9) {
+                      animation-name: wave3;
+                    animation-delay:0.15s;
+                  }
+                  li:nth-child(10) {
+                    animation-delay:0.5s;
+                  }
+                  li:nth-child(11) {
+                      animation-name: wave2;
+                    animation-duration: 0.5s;
+                  }
+                  li:nth-child(12) {
+                      animation-name: wave3;
+                    animation-delay:0.4s;
+                    animation-duration: 0.25s;
+                  }
+                  li:nth-child(13) {
+                      animation-name: wave4;
+                    animation-delay:0.15s;
+                  }
+                  li:nth-child(14) {
+                      animation-name: wave3;
+                    
+                    animation-duration: 0.5s;
+                  }
+                  li:nth-child(15) {
+                      animation-name: wave2;
+                    animation-delay:0.1s;
+                    animation-duration: 0.25s;
+                  }
+                  li:nth-child(16) {
+                      animation-name: wave3;
+                    animation-duration: 0.15s;
+                  }
+                  li:nth-child(17) {
+                      animation-name: wave4;
+                    animation-delay:0.1s;
+                    animation-duration: 0.25s;
+                  }
+                  li:nth-child(18) {
+                      animation-name: wave3;
+                    animation-duration: 0.5s;
+                  }
+                  
+                  @keyframes wave1 {
+                      from {transform:scaleY(1);}
+                      to {transform:scaleY(0.5);}
+                  }
+                  @keyframes wave2 {
+                      from {transform:scaleY(0.3);}
+                      to {transform:scaleY(0.6);}
+                  }
+                  @keyframes wave3 {
+                      from {transform:scaleY(0.6);}
+                      to {transform:scaleY(0.8);}
+                  }
+                  @keyframes wave4 {
+                      from {transform:scaleY(0.2);}
+                      to {transform:scaleY(0.5);}
+                  }
+            }
         }
     }
     .alignement-fix{
