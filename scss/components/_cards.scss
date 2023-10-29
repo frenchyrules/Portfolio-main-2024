@@ -189,7 +189,8 @@
     gap: 0.2vw;
     border-radius: 0.5vw;
     background: rgba(166, 157, 157, 0.30);
-    backdrop-filter: blur(0.6vw);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     p{
         font-size: 0.7vw!important;
     }
