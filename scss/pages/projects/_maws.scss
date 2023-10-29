@@ -163,10 +163,10 @@
     }
 }
 .project-content-section{
-    padding: 0vw 9.5vw 4vw 9.5vw;
+    padding: 4vw 9.5vw 4vw 9.5vw;
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: 2vw;
     iframe{
         margin-top: 1vw;
         margin-bottom: 1vw;
@@ -181,6 +181,9 @@
         gap: 4vw;
         img{
             width: 50%;
+        }
+        .extra-margin{
+            margin-top: 4vw!important;
         }
         .code-structure{
             background: rgba(166, 157, 157, 0.30);

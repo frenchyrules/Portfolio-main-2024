@@ -1,3 +1,26 @@
+// ACCORDION
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".section");
+
+  sections.forEach((section) => {
+      const header = section.querySelector(".section-header");
+      header.addEventListener("click", () => {
+          section.classList.toggle("active");
+      });
+  });
+});
+
+//SMOOTH SCROLL ANCHOR
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
 // CHIP FILTERS
 // JavaScript to handle chip selection and card filtering
 const chips = document.querySelectorAll(".chip");

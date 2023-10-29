@@ -10,6 +10,7 @@
     gap: 2vw;
     .tags{
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
         flex-direction: row!important;
         align-items: center;
@@ -84,31 +85,6 @@
             box-shadow: 0px 14px 50px 7px rgba(0, 0, 0, 0.29);
             border-radius: 1vw;
         }
-        .maws-reveal-1{
-            top: 43%;
-            left: 23%;
-        }
-        .maws-message-box-1{
-            top: 48%;
-            left: 26%;
-        }
-        .maws-reveal-2{
-            top: 13%;
-            left: 33%;
-        }
-        .maws-message-box-2{
-            top: 18%;
-            left: 36%;
-        }
-        .maws-reveal-3{
-            top: 53%;
-            left: 73%;
-        }
-        .maws-message-box-3{
-            top: 58%;
-            left: 76%;
-        }
-
     }
 }
 .project-intro{
@@ -143,4 +119,98 @@
             }
         }
     }
+    .navigation-button-group{
+        padding: 8vw 0vw 8vw 0vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2vw;
+        .navigation-button-row-container{
+            display: flex;
+            gap: 2vw;
+            .navigation-button-group-column{
+                display: flex;
+                flex-direction: column;
+                gap: 2vw;
+            }
+        }
+        
+    }
+}
+.focus-intro{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .problem-statement{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    a{
+        text-decoration-color: white;
+        transition: 0.3s;
+
+        &:hover{
+            transform: translateY(2px);
+            transition: 0.3s;
+        }
+    }
+}
+.focus-intro-features-wrapper{
+    margin-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2vw;
+    .intro-feature{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vw;
+        width: 25vw;
+        p{
+            font-weight: 200;
+        }
+    }
+}
+.double-row-align-start{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4vw;
+    margin-top: 8vw!important;
+    img{
+        width: 50%;
+    }
+
+}
+.double-row-centered{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    img{
+        width: 50%;
+    }
+
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vw;
+}
+.divider{
+    height: 0.1vw;
+    background-color: white;
+    width: 100%;
+}
+.minus-margin{
+    margin-top: -4vw;
 }
