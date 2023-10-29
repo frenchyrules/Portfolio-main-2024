@@ -389,6 +389,10 @@ width: 100%;
             width: 100%!important;
         }
         gap: 8vw!important;
+        iframe{
+            width: 80vw!important;
+            height: 50vw!important;
+        }
     }
     .double-row-align-start{
         flex-direction: column;

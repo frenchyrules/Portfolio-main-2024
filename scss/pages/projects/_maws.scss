@@ -179,6 +179,10 @@
         flex-direction: row;
         align-items: center;
         gap: 4vw;
+        iframe{
+            width: 40vw;
+            height: 20vw;
+        }
         img{
             width: 50%;
         }
