@@ -2009,9 +2009,9 @@ main .about-items-right .experience {
     width: fit-content;
   }
   .hero-banner .hero-items-left .intro-pill {
-    display: inline-flex;
-    align-items: flex-end;
-    gap: 1.2vw;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
   }
   .hero-banner .hero-items-left .intro-pill .location {
     display: flex;
@@ -2022,8 +2022,11 @@ main .about-items-right .experience {
     border-radius: 4px;
     background: rgba(166, 157, 157, 0.2);
   }
+  .hero-banner .hero-items-left .intro-pill .socials {
+    gap: 4vw;
+  }
   .hero-banner .hero-items-left .intro-pill svg {
-    height: 5vw;
+    height: 8vw;
   }
   .hero-banner .hero-items-left .text-button {
     display: none;
@@ -2156,7 +2159,7 @@ main .about-items-right .experience {
   .methodology-section-mobile {
     display: flex !important;
     flex-direction: column;
-    gap: 6vw;
+    gap: 10vw;
     margin-top: 15vw;
     margin-bottom: 15vw;
   }

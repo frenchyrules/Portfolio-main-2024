@@ -27,9 +27,9 @@ header{
     .hero-items-left{
         width: fit-content;
         .intro-pill{
-            display: inline-flex;
-            align-items: flex-end;
-            gap: 1.2vw;
+            display: flex;
+            align-items: center;
+            gap: 4vw;
             .location{
                 display: flex;
                 padding: 1vw 2vw 1vw 1vw;
@@ -39,8 +39,11 @@ header{
                 border-radius: 4px;
                 background: rgba(166, 157, 157, 0.20);
             }
+            .socials{
+                gap: 4vw;
+            }
             svg{
-                height: 5vw;
+                height: 8vw;
             }
         }
         .text-button{
@@ -183,10 +186,9 @@ header{
 .methodology-section-mobile{
     display: flex!important;
     flex-direction: column;
-    gap: 6vw;
+    gap: 10vw;
     margin-top: 15vw;
     margin-bottom: 15vw;
-
     .methodology-card-row-wrapper{
         height: fit-content;
         width: 100%;
