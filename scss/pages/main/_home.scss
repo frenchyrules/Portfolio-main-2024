@@ -131,15 +131,6 @@ body{
     }
 }
 .projects-section{
-    @keyframes verticalMovement {
-        from {
-          transform: translateY(0);
-        }
-        to {
-          transform: translateY(0.25vw); /* Adjust this value to control the vertical movement distance */
-        }
-      }
-
     height: auto;
     width: 100%;
     padding: 0vw 9.5vw;
@@ -163,17 +154,6 @@ body{
                 fill: white;
             }
         }
-        button{
-            position: relative;
-            animation: verticalMovement 1s infinite alternate ease-in-out;
-            // margin-top: 0vw;
-            svg{
-                margin-left: 0.5vw;
-            }
-            &:hover{
-                animation-play-state: paused;
-            }
-        }
         span{
             margin: 0vw 0.2vw 0.2vw 0vw;
             color: $primaryColor;
@@ -191,6 +171,16 @@ body{
         a{
             text-decoration: none;
             width: fit-content;
+        }
+    }
+    .button-row{
+        width: 100%;
+        padding-top: 2vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        .primary-button{
+            gap: 0.5vw;
         }
     }
 }

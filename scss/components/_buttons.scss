@@ -15,7 +15,7 @@
     background: $primaryColor;
     box-shadow: 0vw 0vw 2.7vw rgba(90, 63, 255, 0.41);
     border-radius: 0.3vw;
-    transition: 0.5s;
+    transition: 0.3s;
     svg{
         height: 1vw!important;
     }
@@ -28,7 +28,7 @@
     }
     &:hover{
         background: lighten($primaryColor, 5%);
-        transition: 0.5s;
+        transition: 0.3s;
         transform: translatey(3px);
         .folder-closed{
             display: none;
@@ -52,7 +52,7 @@
 
     border: 0.07vw solid $white;
     border-radius: 0.3vw;
-    transition: 0.2s;
+    transition: 0.3s;
     text-decoration: none!important;
     
     a{
@@ -64,7 +64,7 @@
     }
     &:hover{
         background: rgba(255, 255, 255, 0.245);
-        transition: 0.2s;
+        transition: 0.3s;
         transform: translatey(3px);
     }
 }
@@ -84,7 +84,7 @@
     text-decoration: none;
 
     border-radius: 0.3vw;
-    transition: 0.5s;
+    transition: 0.3s;
     text-align: center;
     svg{
         height: 1.2vw;
@@ -96,7 +96,7 @@
 
     &:hover{
         background: lighten($primaryColor, 5%);
-        transition: 0.5s;
+        transition: 0.3s;
         transform: translatey(3px);
         .book-closed{
             display: none;
@@ -116,7 +116,7 @@
     border-radius: 0.15vw;
     background: linear-gradient(90deg, #5A3FFF 0%, #BB3CF7 100%);
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
     .text-wrapper{
         display: flex;
         padding: 0.3vw 0.46vw 0.3vw 0.46vw;
@@ -125,9 +125,9 @@
         gap: 0.3vw;
         border-radius: 0.15vw;
         background: #1A1128;
-        transition: 0.5s;
+        transition: 0.3s;
         p{
-            transition: 0.5s;
+            transition: 0.3s;
             background: linear-gradient(90deg, #5A3FFF 0%, #BB3CF7 100%);
             background-clip: text;
             -webkit-background-clip: text;
@@ -136,21 +136,21 @@
             font-weight: 600;
         }
         svg{
-            transition: 0.5s;
+            transition: 0.3s;
             fill: #BB3CF7;
         }
         &:hover{
-            transition: 0.5s;
+            transition: 0.3s;
             background: linear-gradient(90deg, #5A3FFF 0%, #BB3CF7 100%);
             p{
-                transition: 0.5s;
+                transition: 0.3s;
                 background: white;
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
             svg{
-                transition: 0.5s;
+                transition: 0.3s;
                 fill: white;
             }
         }
@@ -160,7 +160,7 @@
     padding: 0;
     background: none;
     border: none;
-    transition: 0.5s;
+    transition: 0.3s;
     a{            
         transition: 0.5s;
         font-family: Montserrat;
@@ -174,15 +174,15 @@
         svg{
             height: 1.2vw!important;
             fill: $white;
-            transition: 0.5s;
+            transition: 0.3s;
         }
         &:hover{
             color: $primaryColor;
-            transition: 0.5s;
+            transition: 0.3s;
             svg{
                 fill: $primaryColor;
                 transform: translateX(0.3vw);
-                transition: 0.5s;
+                transition: 0.3s;
             }
         }
     }
@@ -307,12 +307,12 @@
     backdrop-filter: blur(4.5px);
     font-size: 1.5vw;
     color: white;
-    transition: 0.2s;
+    transition: 0.3s;
 
     &:hover{
         cursor: pointer;
         background: #5A3FFF;
-        transition: 0.2s;
+        transition: 0.3s;
         + .message-box {
             visibility: visible;
           }
@@ -331,10 +331,10 @@
     background: rgba(255, 255, 255, 0.09);
     border-radius: 0.5vw;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.3s;
     &:hover{
         background: rgba(255, 255, 255, 0.242);
-        transition: 0.2s;
+        transition: 0.3s;
     }
 }
 .project-buttons-footer{
@@ -365,7 +365,7 @@
     border: 0.04vw solid rgba(255, 204, 106, 0.16);
     background: rgba(255, 204, 106, 0.10);
     text-decoration: none!important;
-    transition: 0.2s;
+    transition: 0.3s;
     p{
         color: #FFCC6A;
     }
@@ -385,7 +385,7 @@
         }
     }
     &:hover{
-        transition: 0.2s;
+        transition: 0.3s;
         border-radius: 0.2vw;
         border: 0.04vw solid rgba(255, 204, 106, 0.16);
         background: rgba(255, 204, 106, 0.20);
@@ -531,7 +531,7 @@
         border: 0.04vw solid rgba(255, 204, 106, 0.16);
         background: rgba(255, 204, 106, 0.10);
         text-decoration: none!important;
-        transition: 0.2s;
+        transition: 0.3s;
         p{
             font-size: 3vw!important;
             color: #FFCC6A;
@@ -552,7 +552,7 @@
             }
         }
         &:hover{
-            transition: 0.2s;
+            transition: 0.3s;
             border-radius: 0.2vw;
             border: 0.04vw solid rgba(255, 204, 106, 0.16);
             background: rgba(255, 204, 106, 0.20);

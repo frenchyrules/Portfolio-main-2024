@@ -104,7 +104,7 @@ p {
 
 .tag-regular {
   font-family: Source Code Pro;
-  font-size: 0.75vw;
+  font-size: 0.8vw;
   font-weight: 400;
   letter-spacing: 0em;
   color: white;
@@ -191,7 +191,7 @@ p {
   background: #5A3FFF;
   box-shadow: 0vw 0vw 2.7vw rgba(90, 63, 255, 0.41);
   border-radius: 0.3vw;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .primary-button svg {
   height: 1vw !important;
@@ -205,7 +205,7 @@ p {
 }
 .primary-button:hover {
   background: #7059ff;
-  transition: 0.5s;
+  transition: 0.3s;
   transform: translatey(3px);
 }
 .primary-button:hover .folder-closed {
@@ -227,7 +227,7 @@ p {
   height: fit-content;
   border: 0.07vw solid #ffffff;
   border-radius: 0.3vw;
-  transition: 0.2s;
+  transition: 0.3s;
   text-decoration: none !important;
 }
 .secondary-button a p {
@@ -237,7 +237,7 @@ p {
 }
 .secondary-button:hover {
   background: rgba(255, 255, 255, 0.245);
-  transition: 0.2s;
+  transition: 0.3s;
   transform: translatey(3px);
 }
 
@@ -254,7 +254,7 @@ p {
   color: #ffffff;
   text-decoration: none;
   border-radius: 0.3vw;
-  transition: 0.5s;
+  transition: 0.3s;
   text-align: center;
 }
 .project-button svg {
@@ -266,7 +266,7 @@ p {
 }
 .project-button:hover {
   background: #7059ff;
-  transition: 0.5s;
+  transition: 0.3s;
   transform: translatey(3px);
 }
 .project-button:hover .book-closed {
@@ -286,7 +286,7 @@ p {
   border-radius: 0.15vw;
   background: linear-gradient(90deg, #5A3FFF 0%, #BB3CF7 100%);
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .resume-button .text-wrapper {
   display: flex;
@@ -296,10 +296,10 @@ p {
   gap: 0.3vw;
   border-radius: 0.15vw;
   background: #1A1128;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .resume-button .text-wrapper p {
-  transition: 0.5s;
+  transition: 0.3s;
   background: linear-gradient(90deg, #5A3FFF 0%, #BB3CF7 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -308,22 +308,22 @@ p {
   font-weight: 600;
 }
 .resume-button .text-wrapper svg {
-  transition: 0.5s;
+  transition: 0.3s;
   fill: #BB3CF7;
 }
 .resume-button .text-wrapper:hover {
-  transition: 0.5s;
+  transition: 0.3s;
   background: linear-gradient(90deg, #5A3FFF 0%, #BB3CF7 100%);
 }
 .resume-button .text-wrapper:hover p {
-  transition: 0.5s;
+  transition: 0.3s;
   background: white;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .resume-button .text-wrapper:hover svg {
-  transition: 0.5s;
+  transition: 0.3s;
   fill: white;
 }
 
@@ -331,7 +331,7 @@ p {
   padding: 0;
   background: none;
   border: none;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .text-button a {
   transition: 0.5s;
@@ -347,16 +347,16 @@ p {
 .text-button a svg {
   height: 1.2vw !important;
   fill: #ffffff;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .text-button a:hover {
   color: #5A3FFF;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .text-button a:hover svg {
   fill: #5A3FFF;
   transform: translateX(0.3vw);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .switch {
@@ -472,12 +472,12 @@ p {
   backdrop-filter: blur(4.5px);
   font-size: 1.5vw;
   color: white;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .reveal:hover {
   cursor: pointer;
   background: #5A3FFF;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .reveal:hover + .message-box {
   visibility: visible;
@@ -493,14 +493,14 @@ p {
   background: rgba(255, 255, 255, 0.09);
   border-radius: 0.5vw;
   text-decoration: none;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .github-button svg {
   width: 1.5vw;
 }
 .github-button:hover {
   background: rgba(255, 255, 255, 0.242);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .project-buttons-footer {
@@ -532,7 +532,7 @@ p {
   border: 0.04vw solid rgba(255, 204, 106, 0.16);
   background: rgba(255, 204, 106, 0.1);
   text-decoration: none !important;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .project-navigation-button p {
   color: #FFCC6A;
@@ -553,7 +553,7 @@ p {
   display: none;
 }
 .project-navigation-button:hover {
-  transition: 0.2s;
+  transition: 0.3s;
   border-radius: 0.2vw;
   border: 0.04vw solid rgba(255, 204, 106, 0.16);
   background: rgba(255, 204, 106, 0.2);
@@ -679,7 +679,7 @@ p {
     border: 0.04vw solid rgba(255, 204, 106, 0.16);
     background: rgba(255, 204, 106, 0.1);
     text-decoration: none !important;
-    transition: 0.2s;
+    transition: 0.3s;
   }
   .project-navigation-button p {
     font-size: 3vw !important;
@@ -701,7 +701,7 @@ p {
     display: none;
   }
   .project-navigation-button:hover {
-    transition: 0.2s;
+    transition: 0.3s;
     border-radius: 0.2vw;
     border: 0.04vw solid rgba(255, 204, 106, 0.16);
     background: rgba(255, 204, 106, 0.2);
@@ -787,7 +787,7 @@ p {
 .project-card {
   position: relative;
   display: flex;
-  width: 21.9vw;
+  width: 18vw !important;
   height: 30vw;
   padding: 1.25vw;
   flex-direction: column;
@@ -798,6 +798,13 @@ p {
   background: #1E0C30;
   box-shadow: 0vw 0vw 0vw 0vw rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.09), 0px 8px 5px 0px rgba(0, 0, 0, 0.05), 0px 14px 6px 0px rgba(0, 0, 0, 0.01), 0px 22px 6px 0px rgba(0, 0, 0, 0);
   backdrop-filter: blur(0.7vw);
+  transition: 0.3s;
+}
+.project-card:hover {
+  background: #2A1044;
+  transform: translateY(4px);
+  transition: 0.3s ease-in-out;
+  border: 1px solid rgba(53, 41, 89, 0.8156862745);
 }
 .project-card img {
   width: 100%;
@@ -914,6 +921,12 @@ p {
 }
 .project-card .tags .hide-tag {
   opacity: 0;
+}
+
+#disabled {
+  background-color: #191919 !important;
+  border: 0.07vw solid #191919;
+  pointer-events: none;
 }
 
 .process-card {
@@ -1673,14 +1686,6 @@ body #particles-js {
   justify-content: center;
   align-items: center;
 }
-@keyframes verticalMovement {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(0.25vw); /* Adjust this value to control the vertical movement distance */
-  }
-}
 .projects-section .section-intro {
   width: 100%;
   display: flex;
@@ -1697,16 +1702,6 @@ body #particles-js {
 }
 .projects-section .section-intro div svg {
   fill: white;
-}
-.projects-section .section-intro button {
-  position: relative;
-  animation: verticalMovement 1s infinite alternate ease-in-out;
-}
-.projects-section .section-intro button svg {
-  margin-left: 0.5vw;
-}
-.projects-section .section-intro button:hover {
-  animation-play-state: paused;
 }
 .projects-section .section-intro span {
   margin: 0vw 0.2vw 0.2vw 0vw;
@@ -1725,6 +1720,16 @@ body #particles-js {
 .projects-section .project-card-row a {
   text-decoration: none;
   width: fit-content;
+}
+.projects-section .button-row {
+  width: 100%;
+  padding-top: 2vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.projects-section .button-row .primary-button {
+  gap: 0.5vw;
 }
 
 .projects-section-mobile {
