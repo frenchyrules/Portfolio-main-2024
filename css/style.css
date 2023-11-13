@@ -2957,6 +2957,10 @@ main .about-items-right .experience {
   border-radius: 1vw;
 }
 
+#reduce-text-width p {
+  width: 85%;
+}
+
 .cascade8-hero {
   position: relative;
   height: auto;
