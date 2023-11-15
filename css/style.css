@@ -607,6 +607,16 @@ p {
   transition: max-height 0.3s ease;
 }
 
+.solution-pill {
+  background: rgba(255, 204, 106, 0.1);
+  width: fit-content;
+  border-radius: 0.2vw;
+  padding: 0.4vw;
+}
+.solution-pill p {
+  color: #FFCC6A;
+}
+
 @media (max-width: 768px) {
   .primary-button {
     width: 100%;
@@ -2958,7 +2968,7 @@ main .about-items-right .experience {
 }
 
 #reduce-text-width p {
-  width: 85%;
+  max-width: 1440px;
 }
 
 .cascade8-hero {

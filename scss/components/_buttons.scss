@@ -449,7 +449,15 @@
         }
     }
 }
-
+.solution-pill{
+    background: rgba(255, 204, 106, 0.10);
+    width: fit-content;
+    border-radius: 0.2vw;
+    padding: 0.4vw;
+    p{
+        color: #FFCC6A;
+    }
+}
 // RESPONSIVE
 @media (max-width: 768px){
     .primary-button{
