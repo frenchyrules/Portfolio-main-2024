@@ -1567,7 +1567,7 @@ html {
 }
 
 body {
-  background: linear-gradient(105.14deg, #000000 21.49%, #5D2BAB 169.37%);
+  background: #0a0118;
 }
 body #particles-js {
   width: 100%;
@@ -1829,8 +1829,9 @@ main .about-items-left .bio {
   gap: 1.5vw;
   flex-shrink: 0;
   border-radius: 0.5vw;
-  border: 0.06vw solid #2A2240;
-  background: #1E0C30;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/bio-items-left.png);
+  background-size: cover;
   backdrop-filter: blur(0.6vw);
 }
 main .about-items-left .bio .bio-items-left {
@@ -1857,12 +1858,15 @@ main .about-items-left .bio .bio-items-right {
 }
 main .about-items-left .bio .bio-items-right .bio-text-1 {
   margin-top: 0.8vw;
+  color: #A89CAE !important;
 }
 main .about-items-left .bio .bio-items-right .bio-text-2 {
   margin-top: 1.8vw;
+  color: #A89CAE !important;
 }
 main .about-items-left .bio .bio-items-right .bio-text-3 {
   margin-top: 1.8vw;
+  color: #A89CAE !important;
 }
 main .about-items-left .education {
   display: flex;
@@ -1875,9 +1879,12 @@ main .about-items-left .education {
   justify-content: center;
   gap: 1.5vw;
   border-radius: 0.5vw;
-  border: 0.06vw solid #2A2240;
-  background: #1E0C30;
+  background-image: url(/assets/images/education.png);
+  background-size: cover;
   backdrop-filter: blur(0.6vw);
+}
+main .about-items-left .education .darkened-text {
+  color: #A89CAE !important;
 }
 main .about-items-left .experience-years {
   display: flex;
@@ -1890,8 +1897,8 @@ main .about-items-left .experience-years {
   justify-content: center;
   gap: 1.5vw;
   border-radius: 0.5vw;
-  border: 0.06vw solid #2A2240;
-  background: #1E0C30;
+  background-image: url(/assets/images/cv-experience.png);
+  background-size: cover;
   backdrop-filter: blur(0.6vw);
 }
 main .about-items-left .experience-years .experience-row {
@@ -1928,9 +1935,16 @@ main .about-items-right .skills {
   align-items: flex-start;
   gap: 1.5vw;
   border-radius: 0.5vw;
-  border: 0.06vw solid #2A2240;
-  background: #1E0C30;
+  background-image: url(/assets/images/skill-interests.png);
+  background-size: cover;
   backdrop-filter: blur(0.6vw);
+}
+main .about-items-right .skills h3 {
+  width: 100% !important;
+  line-height: normal;
+}
+main .about-items-right .skills p {
+  color: #A89CAE !important;
 }
 main .about-items-right .experience {
   display: flex;
@@ -1943,9 +1957,13 @@ main .about-items-right .experience {
   gap: 1.5vw;
   flex-shrink: 0;
   border-radius: 0.5vw;
-  border: 0.06vw solid #2A2240;
-  background: #1E0C30;
+  background-image: url(/assets/images/experience.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   backdrop-filter: blur(0.6vw);
+}
+main .about-items-right .experience p {
+  color: #A89CAE !important;
 }
 
 .projects-title-container {

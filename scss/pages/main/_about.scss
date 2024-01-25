@@ -26,8 +26,11 @@ main{
             gap: 1.5vw;
             flex-shrink: 0;
             border-radius: 0.5vw;
-            border: 0.06vw solid #2A2240;
-            background: #1E0C30;
+            background-repeat: no-repeat;
+            // border: 0.06vw solid #2A2240;
+            // background: #0a0118;
+            background-image: url(/assets/images/bio-items-left.png);
+            background-size: cover;
             backdrop-filter: blur(0.6vw);
             .bio-items-left{
                 display: flex;
@@ -50,14 +53,18 @@ main{
                 align-items: flex-start;
                 flex: 1 0 0;
                 align-self: stretch;
+
                 .bio-text-1{
                     margin-top: 0.8vw;
+                    color: #A89CAE!important;
                 }
                 .bio-text-2{
                     margin-top: 1.8vw;
+                    color: #A89CAE!important;
                 }
                 .bio-text-3{
                     margin-top: 1.8vw;
+                    color: #A89CAE!important;
                 }
             }
         }
@@ -72,9 +79,13 @@ main{
             justify-content: center;
             gap: 1.5vw;
             border-radius: 0.5vw;
-            border: 0.06vw solid #2A2240;
-            background: #1E0C30;
+            // border: 0.06vw solid #2A2240;
+            background-image: url(/assets/images/education.png);
+            background-size: cover;
             backdrop-filter: blur(0.6vw);
+            .darkened-text{
+                color: #A89CAE!important;
+            }
         }
         .experience-years{
             display: flex;
@@ -87,8 +98,9 @@ main{
             justify-content: center;
             gap: 1.5vw;
             border-radius: 0.5vw;
-            border: 0.06vw solid #2A2240;
-            background: #1E0C30;
+            // border: 0.06vw solid #2A2240;
+            background-image: url(/assets/images/cv-experience.png);
+            background-size: cover;
             backdrop-filter: blur(0.6vw);
             .experience-row{
                 width: 100%;
@@ -106,7 +118,6 @@ main{
                         padding: 0.1vw 0.5vw 0.1vw 0.5vw;
                         background:  #593fff20;
                         border-radius: 0.2vw;
-    
                         color: white;
                     }
                 }
@@ -126,9 +137,17 @@ main{
             align-items: flex-start;
             gap: 1.5vw;
             border-radius: 0.5vw;
-            border: 0.06vw solid #2A2240;
-            background: #1E0C30;
+            // border: 0.06vw solid #2A2240;
+            background-image: url(/assets/images/skill-interests.png);
+            background-size: cover;
             backdrop-filter: blur(0.6vw);
+            h3{
+                width: 100%!important;
+                line-height: normal;
+            }
+            p{
+                color: #A89CAE!important;
+            }
         }
         .experience{
             display: flex;
@@ -141,9 +160,14 @@ main{
             gap: 1.5vw;
             flex-shrink: 0;
             border-radius: 0.5vw;
-            border: 0.06vw solid #2A2240;
-            background: #1E0C30;
+            // border: 0.06vw solid #2A2240;
+            background-image: url(/assets/images/experience.png);
+            background-size: cover;
+            background-repeat: no-repeat;
             backdrop-filter: blur(0.6vw);
+            p{
+                color: #A89CAE!important;
+            }
         }
     }
 }
