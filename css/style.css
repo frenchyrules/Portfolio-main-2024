@@ -1822,7 +1822,7 @@ main .about-items-left {
 main .about-items-left .bio {
   display: flex;
   width: 40vw;
-  height: 100%;
+  height: 20vw;
   padding: 1.5vw;
   justify-content: center;
   align-items: flex-start;
@@ -1830,8 +1830,8 @@ main .about-items-left .bio {
   flex-shrink: 0;
   border-radius: 0.5vw;
   background-repeat: no-repeat;
-  background-image: url(/assets/images/bio-items-left.png);
-  background-size: cover;
+  border: 0.06vw solid #2A2240;
+  background: #1E0C30;
   backdrop-filter: blur(0.6vw);
 }
 main .about-items-left .bio .bio-items-left {
@@ -1858,47 +1858,47 @@ main .about-items-left .bio .bio-items-right {
 }
 main .about-items-left .bio .bio-items-right .bio-text-1 {
   margin-top: 0.8vw;
-  color: #A89CAE !important;
+  color: #cabdd1 !important;
 }
 main .about-items-left .bio .bio-items-right .bio-text-2 {
   margin-top: 1.8vw;
-  color: #A89CAE !important;
+  color: #cabdd1 !important;
 }
 main .about-items-left .bio .bio-items-right .bio-text-3 {
   margin-top: 1.8vw;
-  color: #A89CAE !important;
+  color: #cabdd1 !important;
 }
 main .about-items-left .education {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 100% !important;
+  height: 18vw;
   width: 40vw;
   padding: 1.5vw;
   justify-content: center;
   gap: 1.5vw;
   border-radius: 0.5vw;
-  background-image: url(/assets/images/education.png);
-  background-size: cover;
+  border: 0.06vw solid #2A2240;
+  background: #1E0C30;
   backdrop-filter: blur(0.6vw);
 }
 main .about-items-left .education .darkened-text {
-  color: #A89CAE !important;
+  color: #cabdd1 !important;
 }
 main .about-items-left .experience-years {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: auto;
+  height: 12vw;
   width: 40vw;
   padding: 1.5vw;
   justify-content: center;
   gap: 1.5vw;
   border-radius: 0.5vw;
-  background-image: url(/assets/images/cv-experience.png);
-  background-size: cover;
+  border: 0.06vw solid #2A2240;
+  background: #1E0C30;
   backdrop-filter: blur(0.6vw);
 }
 main .about-items-left .experience-years .experience-row {
@@ -1930,40 +1930,40 @@ main .about-items-right .skills {
   display: flex;
   flex-direction: column;
   width: 40vw;
+  height: 20vw;
   padding: 1.5vw;
   justify-content: center;
   align-items: flex-start;
   gap: 1.5vw;
   border-radius: 0.5vw;
-  background-image: url(/assets/images/skill-interests.png);
-  background-size: cover;
+  border: 0.06vw solid #2A2240;
+  background: #1E0C30;
   backdrop-filter: blur(0.6vw);
 }
 main .about-items-right .skills h3 {
   width: 100% !important;
-  line-height: normal;
+  line-height: 0.8;
 }
 main .about-items-right .skills p {
-  color: #A89CAE !important;
+  color: #cabdd1 !important;
 }
 main .about-items-right .experience {
   display: flex;
   flex-direction: column;
   width: 40vw;
-  height: 29.5vw;
+  height: 31vw;
   padding: 1.5vw;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5vw;
   flex-shrink: 0;
   border-radius: 0.5vw;
-  background-image: url(/assets/images/experience.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  border: 0.06vw solid #2A2240;
+  background: #1E0C30;
   backdrop-filter: blur(0.6vw);
 }
 main .about-items-right .experience p {
-  color: #A89CAE !important;
+  color: #cabdd1 !important;
 }
 
 .projects-title-container {
@@ -2292,6 +2292,7 @@ main .about-items-right .experience p {
     padding: 4vw;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     gap: 8vw;
   }
   .about-main .about-items-left .bio .bio-img {
@@ -2299,11 +2300,13 @@ main .about-items-right .experience p {
   }
   .about-main .about-items-left .education {
     width: 100%;
+    height: 100%;
     padding: 4vw;
     gap: 4vw;
   }
   .about-main .about-items-left .experience-years {
     width: 100%;
+    height: 100%;
     padding: 4vw;
     gap: 4vw;
   }
@@ -2319,6 +2322,7 @@ main .about-items-right .experience p {
   }
   .about-main .about-items-right .skills {
     width: 100%;
+    height: 100%;
     padding: 4vw;
     gap: 4vw;
   }
@@ -2327,6 +2331,7 @@ main .about-items-right .experience p {
   }
   .about-main .about-items-right .experience {
     width: 100%;
+    height: 100%;
     height: fit-content;
     padding: 4vw;
     gap: 4vw;
