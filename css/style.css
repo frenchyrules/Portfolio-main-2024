@@ -1580,25 +1580,29 @@ body #particles-js {
 body .pointer-blue {
   position: absolute;
   top: 74%;
-  right: 29%;
+  right: 50%;
+  height: 1vw;
   z-index: 10;
 }
 body .pointer-green {
   position: absolute;
-  top: 52%;
-  right: 10%;
+  top: 44%;
+  right: 3%;
+  height: 1vw;
   z-index: 10;
 }
 body .pointer-purple {
   position: absolute;
-  top: 37%;
-  right: 28%;
+  top: 24%;
+  right: 47%;
+  height: 1vw;
   z-index: 10;
 }
 body .pointer-yellow {
   position: absolute;
-  top: 60%;
-  right: 48%;
+  top: 54%;
+  left: 2%;
+  height: 1vw;
   z-index: 10;
 }
 
@@ -2045,6 +2049,34 @@ main .about-items-right .experience p {
 @media (max-width: 768px) {
   header {
     display: none;
+  }
+  .pointer-blue {
+    position: absolute;
+    top: 131% !important;
+    right: 50% !important;
+    height: 3vw !important;
+    z-index: 10;
+  }
+  .pointer-green {
+    position: absolute;
+    top: 85% !important;
+    right: 29% !important;
+    height: 3vw !important;
+    z-index: 10;
+  }
+  .pointer-purple {
+    position: absolute;
+    top: 25% !important;
+    right: 33% !important;
+    height: 3vw !important;
+    z-index: 10;
+  }
+  .pointer-yellow {
+    position: absolute;
+    top: 70% !important;
+    left: 38% !important;
+    height: 3vw !important;
+    z-index: 10;
   }
   .hero-banner {
     height: 200vw;

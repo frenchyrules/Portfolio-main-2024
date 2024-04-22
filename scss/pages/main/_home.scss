@@ -15,25 +15,29 @@ body{
     .pointer-blue{
         position: absolute;
         top: 74%;
-        right: 29%;
+        right: 50%;
+        height: 1vw;
         z-index: 10;
     }
     .pointer-green{
         position: absolute;
-        top: 52%;
-        right: 10%;
+        top: 44%;
+        right: 3%;
+        height: 1vw;
         z-index: 10;
     }
     .pointer-purple{
         position: absolute;
-        top: 37%;
-        right: 28%;
+        top: 24%;
+        right: 47%;
+        height: 1vw;
         z-index: 10;
     }
     .pointer-yellow{
         position: absolute;
-        top: 60%;
-        right: 48%;
+        top: 54%;
+        left: 2%;
+        height: 1vw;
         z-index: 10;
     }  
 }

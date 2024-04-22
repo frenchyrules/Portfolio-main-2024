@@ -4,32 +4,34 @@ header{
     display: none;
 }
 
-// .body{
-//     .pointer-blue{
-//         position: absolute;
-//         top: 74%;
-//         right: 29%;
-//         z-index: 10;
-//     }
-//     .pointer-green{
-//         position: absolute;
-//         top: 52%;
-//         right: 10%;
-//         z-index: 10;
-//     }
-//     .pointer-purple{
-//         position: absolute;
-//         top: 37%;
-//         right: 28%;
-//         z-index: 10;
-//     }
-//     .pointer-yellow{
-//         position: absolute;
-//         top: 60%;
-//         right: 48%;
-//         z-index: 10;
-//     }  
-// }
+.pointer-blue{
+    position: absolute;
+    top: 131%!important;
+    right: 50%!important;
+    height: 3vw!important;
+    z-index: 10;
+}
+.pointer-green{
+    position: absolute;
+    top: 85%!important;
+    right: 29%!important;
+    height: 3vw!important;
+    z-index: 10;
+}
+.pointer-purple{
+    position: absolute;
+    top: 25%!important;
+    right: 33%!important;
+    height: 3vw!important;
+    z-index: 10;
+}
+.pointer-yellow{
+    position: absolute;
+    top: 70%!important;
+    left: 38%!important;
+    height: 3vw!important;
+    z-index: 10;
+}  
 
 .hero-banner{
     height: 200vw;
