@@ -842,6 +842,7 @@ p {
   font-weight: 700;
 }
 .project-card .card-description {
+  text-align: start;
   color: #C8C8C8;
   font-family: Source Code Pro;
   font-size: 0.95vw;
