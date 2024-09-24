@@ -3365,3 +3365,7 @@ main .about-items-right .experience p {
 .minus-margin-small {
   margin-top: 2vw !important;
 }
+
+.half-image {
+  width: 65% !important;
+}
