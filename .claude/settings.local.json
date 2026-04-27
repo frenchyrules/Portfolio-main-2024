@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(explorer \"c:\\\\Users\\\\Anthony\\\\Documents\\\\GitHub\\\\Portfolio-main\\\\assets\\\\images\")"
+    ]
+  }
+}

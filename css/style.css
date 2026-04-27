@@ -1980,8 +1980,8 @@ main .about-items-right .experience {
   display: flex;
   flex-direction: column;
   width: 40vw;
-  height: 31vw;
-  padding: 1.5vw;
+  height: auto;
+  padding: 1.5vw 1.5vw 2vw 1.5vw;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5vw;
@@ -3368,4 +3368,86 @@ main .about-items-right .experience p {
 
 .half-image {
   width: 65% !important;
+}
+
+.louise-hero {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 10vw 9.5vw 4vw 9.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.louise-hero .tags {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+}
+.louise-hero .tags .tag-regular:nth-child(1) {
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(94, 183, 145, 0.1);
+  color: #5EB791;
+}
+.louise-hero .tags .tag-regular:nth-child(2) {
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(60, 100, 247, 0.1);
+  color: #3C64F7;
+}
+.louise-hero .tags .tag-regular:nth-child(3) {
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(187, 60, 247, 0.1);
+  color: #BB3CF7;
+}
+.louise-hero .tags .tag-regular:nth-child(4) {
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(255, 204, 106, 0.1);
+  color: #FFCC6A;
+}
+.louise-hero .tags .tag-regular:nth-child(5) {
+  display: flex;
+  padding: 0.2vw 0.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  border-radius: 0.2vw;
+  background: rgba(247, 60, 172, 0.1);
+  color: #F73CAC;
+}
+.louise-hero .project-banner-container {
+  position: relative;
+  padding: 2vw;
+  background: rgba(166, 157, 157, 0.3);
+  backdrop-filter: blur(4.5px);
+  border-radius: 1vw;
+}
+.louise-hero .project-banner-container img {
+  box-shadow: 0px 14px 50px 7px rgba(0, 0, 0, 0.29);
+  border-radius: 1vw;
 }
