@@ -24,6 +24,7 @@
                 border-radius: 0.2vw;
                 background: rgba(94, 183, 145, 0.10);
                 color: #5EB791;
+                white-space: nowrap;
             }
             .tag-regular:nth-child(2){
                 display: flex;
@@ -34,6 +35,7 @@
                 border-radius: 0.2vw;
                 background: rgba(187, 60, 247, 0.10);
                 color: #BB3CF7;
+                white-space: nowrap;
             }
             .tag-regular:nth-child(3){
                 display: flex;
@@ -44,6 +46,7 @@
                 border-radius: 0.2vw;
                 background: rgba(255, 204, 106, 0.10);
                 color: #FFCC6A;
+                white-space: nowrap;
             }
             .tag-regular:nth-child(4){
                 display: flex;
@@ -54,9 +57,24 @@
                 border-radius: 0.2vw;
                 background: rgba(247, 60, 172, 0.10);
                 color: #F73CAC;
+                white-space: nowrap;
             }
     .hide-tag{
         opacity: 0;
+    }
+
+    @media (max-width: 768px) {
+        .tags {
+            gap: 2vw;
+            flex-wrap: wrap;
+            .tag-regular:nth-child(1),
+            .tag-regular:nth-child(2),
+            .tag-regular:nth-child(3),
+            .tag-regular:nth-child(4) {
+                padding: 1.2vw 2.5vw;
+                border-radius: 1vw;
+            }
+        }
     }
     }
     .primary-button{

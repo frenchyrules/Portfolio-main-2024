@@ -108,6 +108,7 @@ p {
   font-weight: 400;
   letter-spacing: 0em;
   color: white;
+  white-space: nowrap;
 }
 
 .label {
@@ -165,6 +166,7 @@ p {
     font-weight: 400;
     letter-spacing: 0em;
     color: white;
+    white-space: nowrap;
   }
 }
 ::-moz-selection { /* Code for Firefox */
@@ -2425,6 +2427,18 @@ main .about-items-right .experience p {
     margin-top: 2vw;
     margin-bottom: 2vw;
   }
+  .maws-hero .tags {
+    flex-wrap: wrap;
+    gap: 2vw;
+  }
+  .maws-hero .tags .tag-regular:nth-child(1),
+  .maws-hero .tags .tag-regular:nth-child(2),
+  .maws-hero .tags .tag-regular:nth-child(3),
+  .maws-hero .tags .tag-regular:nth-child(4) {
+    padding: 1.2vw 2.5vw;
+    border-radius: 1vw;
+    white-space: nowrap;
+  }
   .project-intro {
     margin-top: 5vw;
   }
@@ -2618,6 +2632,7 @@ main .about-items-right .experience p {
   border-radius: 0.2vw;
   background: rgba(94, 183, 145, 0.1);
   color: #5EB791;
+  white-space: nowrap;
 }
 .maws-hero .tags .tag-regular:nth-child(2) {
   display: flex;
@@ -2628,6 +2643,7 @@ main .about-items-right .experience p {
   border-radius: 0.2vw;
   background: rgba(187, 60, 247, 0.1);
   color: #BB3CF7;
+  white-space: nowrap;
 }
 .maws-hero .tags .tag-regular:nth-child(3) {
   display: flex;
@@ -2638,6 +2654,7 @@ main .about-items-right .experience p {
   border-radius: 0.2vw;
   background: rgba(255, 204, 106, 0.1);
   color: #FFCC6A;
+  white-space: nowrap;
 }
 .maws-hero .tags .tag-regular:nth-child(4) {
   display: flex;
@@ -2648,9 +2665,23 @@ main .about-items-right .experience p {
   border-radius: 0.2vw;
   background: rgba(247, 60, 172, 0.1);
   color: #F73CAC;
+  white-space: nowrap;
 }
 .maws-hero .tags .hide-tag {
   opacity: 0;
+}
+@media (max-width: 768px) {
+  .maws-hero .tags .tags {
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+  .maws-hero .tags .tags .tag-regular:nth-child(1),
+  .maws-hero .tags .tags .tag-regular:nth-child(2),
+  .maws-hero .tags .tags .tag-regular:nth-child(3),
+  .maws-hero .tags .tags .tag-regular:nth-child(4) {
+    padding: 1.2vw 2.5vw;
+    border-radius: 1vw;
+  }
 }
 .maws-hero .primary-button {
   z-index: 0;
@@ -3426,6 +3457,7 @@ main .about-items-right .experience p {
   align-items: center;
   gap: 0.5vw;
   border-radius: 0.2vw;
+  white-space: nowrap;
   background: rgba(94, 183, 145, 0.1);
   color: #5EB791;
 }
@@ -3436,6 +3468,7 @@ main .about-items-right .experience p {
   align-items: center;
   gap: 0.5vw;
   border-radius: 0.2vw;
+  white-space: nowrap;
   background: rgba(60, 100, 247, 0.1);
   color: #3C64F7;
 }
@@ -3446,6 +3479,7 @@ main .about-items-right .experience p {
   align-items: center;
   gap: 0.5vw;
   border-radius: 0.2vw;
+  white-space: nowrap;
   background: rgba(187, 60, 247, 0.1);
   color: #BB3CF7;
 }
@@ -3456,6 +3490,7 @@ main .about-items-right .experience p {
   align-items: center;
   gap: 0.5vw;
   border-radius: 0.2vw;
+  white-space: nowrap;
   background: rgba(255, 204, 106, 0.1);
   color: #FFCC6A;
 }
@@ -3466,6 +3501,7 @@ main .about-items-right .experience p {
   align-items: center;
   gap: 0.5vw;
   border-radius: 0.2vw;
+  white-space: nowrap;
   background: rgba(247, 60, 172, 0.1);
   color: #F73CAC;
 }
