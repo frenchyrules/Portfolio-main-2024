@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(explorer \"c:\\\\Users\\\\Anthony\\\\Documents\\\\GitHub\\\\Portfolio-main\\\\assets\\\\images\")"
+      "Bash(explorer \"c:\\\\Users\\\\Anthony\\\\Documents\\\\GitHub\\\\Portfolio-main\\\\assets\\\\images\")",
+      "PowerShell(Get-Command magick, cwebp, pngquant, ffmpeg 2>$null)",
+      "PowerShell(Get-Command magick 2>$null)",
+      "PowerShell(Get-Command cwebp 2>$null)",
+      "PowerShell(Get-Command pngquant 2>$null)"
     ]
   }
 }

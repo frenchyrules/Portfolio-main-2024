@@ -394,6 +394,15 @@ width: 100%;
         flex-direction: column;
         gap: 5vw;
         justify-content: flex-start!important;
+        span {
+            padding: 1vw 2vw!important;
+            border-radius: 1vw!important;
+            gap: 2vw!important;
+            margin-bottom: 2vw!important;
+            svg {
+                height: 4vw!important;
+            }
+        }
     }
 }
 .project-content-section{
